@@ -1,0 +1,1 @@
+require(["module1"],function(e){});

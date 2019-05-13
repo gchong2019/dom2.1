@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=SSS, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/login.css">
+    <title>登录页</title>
+</head>
+
+<body>
+    <!-- 头部第一块 -->
+    <div class="header"></div>
+    <!-- logo第二块 -->
+    <header class="login-header">
+        <div id="" class="user_header clearfix" style="padding:11px 0 3px 0;">
+            <div class="logo Left" style="background: url(img/logo2.png) 0 0 no-repeat;width:176px;height:72px;margin-top:-4px;">
+                <a href="/" title="返回美乐乐首页">
+                    <img style="background:none" src="img/blank.gif" width="127" height="52" border="0" alt="美乐乐">
+                </a>
+            </div>
+            <div id="" class="nav Right">
+                <a href="http://10.31.163.22/projectname/src/index1.html">返回首页</a> |
+                <a href="/article_cat-4/article-656.html" target="_blank">帮助中心</a>
+            </div>
+        </div>
+    </header>
+    <!-- 登录页面第三块 -->
+    <div class="main bg-red">
+        <div class="content clearfix">
+            <article class="Left">
+                <a href="#" title="51优惠再续" target="_blank">
+                    <img alt="51优惠再续" src="img/1556585281664886179.png" style="background-color:transparent;" width="620" height="454" class="ad-img">
+                </a>
+            </article>
+            <aside class="Right" id="JS_loginForm">
+                <div style="
+                    position: absolute;
+                    bottom: 68px;
+                    border-top: solid 1px #f4f4f4;
+                    width: 360px;
+                    left: 0;
+                    z-index: 124;
+                ">
+                </div>
+                <div class="yahei">
+                    <div class="switch-type">
+                        <ul class="login-switch clearfix" style="border-bottom: 1px solid rgb(244, 244, 244); left: 0px;">
+                            <li class="switch-account JS_switch-key on" data-switch-index="1">账号登录
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="login-form">
+                        <div class="login-type clearfix" style="left: 0px; top: -5px;">
+                            <div id="JS_login_pwd" class="login-pwd Left">
+                                <div class="error-date">
+                                    <i style="display: none;"></i>
+                                    <span id="error"></span>
+                                </div>
+                                <div class="input-group select-username" style="overflow:inherit">
+                                    <label class="i-user" for="username"></label>
+                                    <input id="username" class="yahei gray" name="username" type="text" autocomplete="off">
+                                </div>
+                                <div class="input-group">
+                                    <label class="i-pwd" for="password"></label>
+                                    <input id="password" class="yahei black" name="password" type="password">
+                                    <input class="yahei gray">
+                                </div>
+                                <div class="input-group none">
+                                    <label class="i-captcha" for="captcha"></label>
+                                    <input maxlength="4" class="Left yahei gray" name="captcha" type="text" style="width:138px" autocomplete="off">
+                                    <i class="right-icon"></i>
+                                    <a class="Left" href="javascript:;">
+                                        <img class="captcha-img JS_validCode" width="60" height="28" src="img/" data-switch-index="1" title="看不清换一张" alt="验证码">
+                                    </a>
+                                    <a class="Left refresh-btn JS_refreshBtn" href="javascript:void(0);"></a>
+                                </div>
+                                <div class="regist-group clearfix" style="margin-top:-12px;">
+                                    <a class="Right" href="javascript:_gaq.push(['_trackEvent','主站-注册登录页面','click','忘记密码']);_ana.push(['trackEvent','主站-注册登录页面','click','忘记密码']);window.location.href='/user/?act=get_password';">忘记密码?</a>
+                                </div>
+                                <a id="btn" class="submit-btn" href="javascript:;" style="margin:24px 0 17px 0;">登录</a>
+                            </div>
+                        </div>
+                        <div class="other-login clearfix">
+                            <a href="javascript:;" class="i-weixin Left J-weixin-request JS_switch-key" data-switch-index="2">
+                                <i></i>
+                                <span>微信登录</span>
+                            </a>
+                            <a href="javascript:;" class="i-app Left JS_switch-key JS-app-request" data-switch-index="3">
+                                <i></i>
+                                <span>APP扫码</span>
+                            </a>
+                            <a href="javascript:;" class="i-qq Left">
+                                <i></i>
+                                <span>QQ登录</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+
+    <!-- footer1第四块 -->
+    <div class="footer1"></div>
+
+    <!-- footer4第五块 -->
+    <div class="footer4"></div>
+    <script src="script/js/jquery.js"></script>
+    <script>
+        $('.header').load('head.html');
+        $('.footer1').load('footer1.html');
+        $('.footer4').load('footer3.html');
+    </script>
+    <script type="text/javascript">
+        function addCookie(key, value, day) {
+            var date = new Date(); //创建日期对象
+            date.setDate(date.getDate() + day); //过期时间：获取当前的日期+天数，设置给date
+            document.cookie = key + '=' + encodeURI(value) + ';expires=' + date; //添加cookie，设置过期时间
+        }
+
+
+        $('#btn').on('click', function() {
+            var $username = $('#username').val();
+            var $password = $('#password').val();
+            $.ajax({
+                type: 'post',
+                url: 'http://10.31.163.22/projectname/php/login.php',
+                data: { //将用户名和密码传输给后端
+                    name: $username,
+                    pass: $password
+                },
+                success: function(data) { //请求成功，接收后端返回的值
+                    if (!data) { //用户名或者密码错误
+                        $('#error').html('用户名或者密码错误');
+                        $('#password').val('');
+                    } else { //成功,存cookie,跳转到首页
+                        addCookie('UserName', $username, 7);
+                        location.href = 'http://10.31.163.22/projectname/src/index1.html';
+                    }
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>

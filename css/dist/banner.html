@@ -1,0 +1,133 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta http-equiv=X-UA-Compatible content="ie=edge"><link rel=stylesheet href=css/banner.css><title>Document</title></head><body><div class=scroll-banner id=JS_mll_scroll_bar style=background:#b3f9f7><div class="w pr"><div class=expr-opacity></div><div class=expr-link><div class=word><p class=city-num><a href=javascript:; target=_blank>上海体验馆 <span>8</span>家</a></p><p><a href=javascript:; target=_blank>全国体验馆 <span>154</span>家</a></p></div><div class=img-list><a class=pavilio href=javascript:; onclick="$.codeSms('',{click : '201412首页_首屏_上海', 'postionCode':'mll_shouye1'});window._gaq.push(['_trackEvent','2018版首页','点击焦点图找身边的体验馆','click']);_ana.push(['trackEvent','2018版首页','点击焦点图找身边的体验馆','click']);return!1"></a> <a target=_blank class=expr-btn href=javascript:; onclick="$.codeSms('',{click : '201412首页_首屏_上海', 'postionCode':'mll_shouye1'});window._gaq.push(['_trackEvent','2018版首页','点击焦点图找身边的体验馆','click']);_ana.push(['trackEvent','2018版首页','点击焦点图找身边的体验馆','click']);return!1"></a></div><div class=word-list><p>美乐乐10年</p><p>已服务 <span>1,000,000</span>个</p><p>中国家庭</p></div></div></div><ul class=scroll-content><li class=scroll-item style="background: rgb(179, 249, 247);" data-imgloaded=1><div class=scroll-index><a href=javascript:; target=_blank title="五一大促 火力全开"><img class="sc-big fadeInR" src=img/1555969946311420473.jpg alt="五一大促 火力全开"></a></div></li><li class=scroll-item style="background: rgb(2, 68, 152);"><div class=scroll-index><a href=javascript:; target=_blank title=51大放价><img class="sc-big fadeInR" src=img/1555970302197856184.jpg alt=51大放价 style="opacity: 1;"></a></div></li><li class=scroll-item style="background: rgb(222, 52, 53);"><div class=scroll-index><a href=javascript:; target=_blank title=现货特卖><img class="sc-big fadeInR" src=img/1536889079459302356.jpg alt=现货特卖 style="opacity: 1;"> <img class="sc-small fadeInL" src=img/1536889156981543029.png alt=现货特卖 style="opacity: 1;"></a></div></li><li class=scroll-item style="background: rgb(232, 234, 234);"><div class=scroll-index><a href=javascript:; target=_blank title=小户型家具><img class="sc-big fadeInR" src=img/1533778323996774457.jpg alt=小户型家具 style="opacity: 1;"> <img class="sc-small fadeInL" src=img/1533778257153990192.png alt=小户型家具 style="opacity: 1;"></a></div></li><li class=scroll-item style="background: rgb(255, 255, 255);"><div class=scroll-index><a href=javascript:; target=_blank title=装修买家具，就上美乐乐><img class="sc-big fadeInR" src=img/1548136519849614855.jpg alt=装修买家具，就上美乐乐 style="opacity: 1;"> <img class="sc-small fadeInL" src=img/1537148988559641084.png alt=装修买家具，就上美乐乐 style="opacity: 1;"></a></div></li><li class=scroll-item style="background: rgb(51, 60, 28);"><div class=scroll-index><a href=javascript:; target=_blank title=实木专题><img class="sc-big fadeInR" src=img/1556417657090487677.jpg alt=实木专题 style="opacity: 1;"> <img class="sc-small fadeInL" src=img/1556402276790598266.png alt=实木专题 style="opacity: 1;"></a></div></li></ul><div class=scroll-btn><span></span> <span></span> <span></span> <span class=current></span> <span></span> <span></span></div></div><script src=script/js/move.js></script><script>
+        //1.获取元素
+        var taoBao = document.querySelector('.scroll-banner');
+        var picUl = document.querySelector('.scroll-banner .scroll-content');
+        var picLi = document.querySelectorAll('.scroll-banner .scroll-content li');
+        var btnLi = document.querySelectorAll('.scroll-banner .scroll-btn span');
+        // var btnLeft = document.querySelector('#left');
+        // var btnRight = document.querySelector('#right');
+        var num = 0;
+        var bstop = true;
+        var timer = null;
+        //2.改变布局。
+        //对布局里面首尾图片进行克隆，然后追加
+        var firstPic = picLi[0].cloneNode(true);
+        var lastPic = picLi[picLi.length - 1].cloneNode(true);
+        picUl.appendChild(firstPic);
+        picUl.insertBefore(lastPic, picLi[0]);
+
+        //3.ul赋值宽度，让所有的li排成一行。
+        picLi = document.querySelectorAll('.scroll-banner .scroll-content li'); //7
+        var liWidth = picLi[0].offsetWidth; //1个li的宽度
+        picUl.style.width = liWidth * picLi.length + 'px';
+        picUl.style.left = -liWidth + 'px';
+
+
+        //4.给小圆圈添加点击事件。
+
+        for (var i = 0; i < btnLi.length; i++) {
+            btnLi[i].index = i; //自定义的索引
+            btnLi[i].onmousemove = function() {
+                num = this.index; //当前按钮的索引
+                tabSwitch();
+                btnLi[num].className = 'current';
+            }
+        }
+        //5.封装切换过程。
+        function tabSwitch() {
+            for (var i = 0; i < btnLi.length; i++) {
+                btnLi[i].className = '';
+            }
+            bufferMove(picUl, {
+                left: -(num + 1) * liWidth
+            }, function() {
+                //判断是否到最后一张
+                if (picUl.offsetLeft <= -liWidth * (btnLi.length + 1)) {
+                    picUl.style.left = -liWidth + 'px';
+                    num = 0;
+                }
+
+                //判断是否第一张
+                if (picUl.offsetLeft >= 0) {
+                    picUl.style.left = -liWidth * btnLi.length + 'px';
+                    num = btnLi.length - 1;
+                }
+                bstop = true;
+            });
+        }
+
+        // //6.左右箭头显示与隐藏
+        taoBao.onmouseover = function() {
+            // btnLeft.style.display = 'block';
+            // btnRight.style.display = 'block';
+            clearInterval(timer);
+        };
+        taoBao.onmouseout = function() {
+            // btnLeft.style.display = 'none';
+            // btnRight.style.display = 'none';
+            timer = setInterval(function() {
+                if (bstop) {
+                    bstop = false;
+                    num++;
+                    tabSwitch();
+                    if (num == btnLi.length) {
+                        btnLi[0].className = 'active';
+                    } else {
+                        btnLi[num].className = 'active';
+                    }
+                }
+            }, 2000);
+        };
+
+        // //右箭头添加点击事件
+        // btnRight.onclick = function() {
+        //     if (bstop) {
+        //         bstop = false;
+        //         num++;
+        //         tabSwitch();
+        //         if (num == btnLi.length) {
+        //             btnLi[0].className = 'active';
+        //         } else {
+        //             btnLi[num].className = 'active';
+        //         }
+        //     }
+
+        // };
+
+        // btnLeft.onclick = function() {
+        //     if (bstop) {
+        //         bstop = false;
+        //         num--;
+        //         tabSwitch();
+        //         if (num < 0) {
+        //             btnLi[btnLi.length - 1].className = 'active';
+        //         } else {
+        //             btnLi[num].className = 'active';
+        //         }
+        //     }
+
+        // };
+
+        timer = setInterval(function() {
+            if (bstop) {
+                bstop = false;
+                num++;
+                tabSwitch();
+                if (num == btnLi.length) {
+                    btnLi[0].className = 'current';
+                } else {
+                    btnLi[num].className = 'current';
+                }
+            } else if (bstop) {
+                bstop = false;
+                num--;
+                tabSwitch();
+                if (num < 0) {
+                    btnLi[btnLi.length - 1].className = 'current';
+                } else {
+                    btnLi[num].className = 'current';
+                }
+            }
+
+        }, 2000);
+    </script></body></html>

@@ -1,0 +1,92 @@
+@charset "utf-8";
+//中文字符编码格式
+//:单行注释，编译后不显示
+
+/* 多行注释：压缩后不显示 */
+
+
+/*！ 强制注释：一直显示 */
+
+$min_W:1200px;
+$mll-footer_W:100%;
+$footer_W:100px;
+$footer_H:100px;
+$pad_top:0;
+$footer_bg:#f8f8f8;
+$position_cen:center;
+$a_color:#333;
+$a_text_Dec:none;
+$distance_0:0;
+$display_ib:inline-block;
+$font_daxiao:14px;
+$color_black:#000;
+$AD_tonglan_bg:#22d9b6;
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.taobao {
+    /* width: 100%; */
+    width: 1200px;
+    height: 460px;
+    /* border: 3px solid black; */
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.taobao ul {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.taobao ul li {
+    /* width: 100%; */
+    width: 1200px;
+    height: 460px;
+    float: left;
+}
+
+.taobao ol {
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    bottom: 10px;
+}
+
+.taobao ol li {
+    float: left;
+    width: 30px;
+    height: 5px;
+    background: #fff;
+    // border-radius: 50%;
+    margin-right: 5px;
+    text-indent: -999em;
+    cursor: pointer;
+}
+
+.taobao ol li.active {
+    background: #333;
+}
+
+#left,
+#right {
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -70px;
+    font-size: 100px;
+    display: none;
+}
+
+#left {
+    left: 20px;
+}
+
+#right {
+    right: 20px;
+}

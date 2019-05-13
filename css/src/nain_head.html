@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/nain_head.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="mll-header">
+        <!-- 头部第1层登录注册 -->
+        <div class="nain_head_logreg"></div>
+        <!-- 头部第2层搜索框 -->
+        <div class="search-bar">
+            <div id="jsSearchComponent" class="search-form">
+                <div class="_view_ search-contr">
+                    <div class="search-logo" onclick="location.href='/'"></div>
+                    <div class="search-list">
+                        <a href="javascript:;" target="_blank">床</a>
+                        <a href="javascript:;" target="_blank">沙发</a>
+                        <a href="javascript:;" target="_blank">餐桌椅</a>
+                        <a href="javascript:;" target="_blank">实木床</a>
+                        <a href="javascript:;" target="_blank">床垫大促</a>
+                    </div>
+                    <div class="form">
+                        <form id="jsHeaderSearchForm" action="/category-9999/" onsubmit="return MLL_header_search_submit();" target="_blank">
+                            <input type="hidden" name="fl" value="q">
+                            <a href="javascript:;" class="submit-btn" id="jsHeaderSearchBtn">
+                                <i></i>
+                            </a>
+                            <input id="jsHeaderSearchInput" name="keywords" value="" autocomplete="off" type="text" maxlength="255" class="input" data-key="人气尖货限时限量秒，拼手速的时候到了>>>" data-url="//www.meilele.com/topic/201904_51dc.html?site_from=ssk">
+                        </form>
+                    </div>
+                    <div id="jsHeaderSearchResult" class="search-result"></div>
+                </div>
+            </div>
+
+            <div class="_view_ search-static">
+                <div class="logo">
+                    <a id="JS_Header_Logo_link_home" href="javascript:;">
+                        <img src="img/logo2.png" alt="美乐乐" width="176" height="72" style="background:none;">
+                    </a>
+                </div>
+
+                <div id="jsHeaderHotKeywords" class="keywords">
+                    <a target="_blank" class="hot-key" title="嗨抢1元抵1000元红包" style="color:#FF6600;" href="javascript:;">嗨抢1元抵1000元红包</a><a target="_blank" class="hot-key" title="床" style="color:#999999;" href="javascript:;">床</a>
+                    <a target="_blank" class="hot-key" title="沙发" style="color:#999999;" href="javascript:;">沙发</a>
+                    <a target="_blank" class="hot-key" title="餐桌椅" style="color:#999999;" href="javascript:;">餐桌椅</a>
+                    <a target="_blank" class="hot-key" title="实木床" style="color:#999999;" href="javascript:;">实木床</a>
+                    <a target="_blank" class="hot-key" title="床垫大促" style="color:#FF6600;" href="javascript:;">床垫大促</a>
+                    <a target="_blank" class="hot-key" title="转角沙发" style="color:#999999;" href="javascript:;">转角沙发</a>
+                    <a target="_blank" class="hot-key" title="灯饰" style="color:#999999;" href="javascript:;">灯饰</a>
+                </div>
+
+                <div class="top-qrcode" style="position: absolute; top: 15px; right: 10px;">
+                    <img src="img/1512700802032881433.png">
+                </div>
+            </div>
+        </div>
+        <!-- 头部第3层二级导航 -->
+        <div class="menu-bar">
+            <div class="_view_">
+                <div id="jsHeaderCatModel" class="category">
+                    <h2>商品分类</h2>
+                    <ul class="category-option" style="display: block;">
+                        <!-- 1 -->
+                        <li class="cat-item hover">
+                            <div class="sub-cat clearfix">
+                                <div class="sub-cat-links Left">
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="javascript:;">
+                                                <i class="i-t"></i>户外/办公
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content">
+                                            <a target="_blank" href="javascript:;" style="">户外套装</a>
+                                            <a target="_blank" href="javascript:;" style="">户外椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">吊篮/吊椅</a>
+                                            <a target="_blank" href="javascript:;" style="">摇椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">折叠床</a>
+                                            <a target="_blank" href="javascript:;" style="">藤艺家具</a>
+                                            <a target="_blank" href="javascript:;" style="">办公桌</a>
+                                            <a target="_blank" href="javascript:;" style="">办公椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">办公沙发</a>
+                                            <a target="_blank" href="javascript:;" style="">文件柜</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">保险柜</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="">
+                                                <i class="i-t"></i>热门搜索
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content last">
+                                            <a target="_blank" href="javascript:;" style="">家具</a>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sub-cat-brand Left">
+                                    <h6>推荐品牌</h6>
+                                    <div class="tag">
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">雅克集</a>
+                                        <a target="_blank" href="javascript:;" style="">欧凯隆</a>
+                                        <a target="_blank" href="javascript:;" style="">蒂美悦</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">RESTAR瑞仕达</a>
+                                        <a target="_blank" href="javascript:;" style="">浩一</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">HAOBIN浩彬</a>
+                                        <a target="_blank" href="javascript:;" style="">思家</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">艾斐堡</a> </div>
+                                    <a target="_blank" href="javascript:;" title="午后慵懒时光">
+                                        <img src="img/1532538552645266754.jpg" alt="午后慵懒时光" width="190" height="260" style="opacity: 1;">
+                                    </a>
+                                </div>
+                            </div>
+                            <i class="icon i6"></i>
+                            <a target="_blank" class="txt" href="javascript:;">卧室</a>
+                            <a target="_blank" class="txt" href="javascript:;">床</a>
+                            <a target="_blank" class="txt" href="javascript:;">床垫</a>
+                            <a target="_blank" class="txt" href="javascript:;">衣柜</a>
+                        </li>
+                        <!-- 2 -->
+                        <li class="cat-item hover">
+                            <div class="sub-cat clearfix">
+                                <div class="sub-cat-links Left">
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="javascript:;">
+                                                <i class="i-t"></i>户外/办公
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content">
+                                            <a target="_blank" href="javascript:;" style="">户外套装</a>
+                                            <a target="_blank" href="javascript:;" style="">户外椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">吊篮/吊椅</a>
+                                            <a target="_blank" href="javascript:;" style="">摇椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">折叠床</a>
+                                            <a target="_blank" href="javascript:;" style="">藤艺家具</a>
+                                            <a target="_blank" href="javascript:;" style="">办公桌</a>
+                                            <a target="_blank" href="javascript:;" style="">办公椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">办公沙发</a>
+                                            <a target="_blank" href="javascript:;" style="">文件柜</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">保险柜</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="">
+                                                <i class="i-t"></i>热门搜索
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content last">
+                                            <a target="_blank" href="javascript:;" style="">靠背椅</a>
+                                            <a target="_blank" href="javascript:;" style="">大班台</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sub-cat-brand Left">
+                                    <h6>推荐品牌</h6>
+                                    <div class="tag">
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">雅克集</a>
+                                        <a target="_blank" href="javascript:;" style="">欧凯隆</a>
+                                        <a target="_blank" href="javascript:;" style="">蒂美悦</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">RESTAR瑞仕达</a>
+                                        <a target="_blank" href="javascript:;" style="">浩一</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">HAOBIN浩彬</a>
+                                        <a target="_blank" href="javascript:;" style="">思家</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">艾斐堡</a> </div>
+                                    <a target="_blank" href="javascript:;" title="午后慵懒时光">
+                                        <img src="img/1532538552645266754.jpg" alt="午后慵懒时光" width="190" height="260" style="opacity: 1;">
+                                    </a>
+                                </div>
+                            </div>
+                            <i class="icon i6"></i>
+                            <a target="_blank" class="txt" href="javascript:;">客厅</a>
+                            <a target="_blank" class="txt" href="javascript:;">沙发</a>
+                            <a target="_blank" class="txt" href="javascript:;">电视柜</a>
+                        </li>
+
+
+
+                        <!-- 3 -->
+                        <li class="cat-item hover">
+                            <div class="sub-cat clearfix">
+                                <div class="sub-cat-links Left">
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="javascript:;">
+                                                <i class="i-t"></i>户外/办公
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content">
+                                            <a target="_blank" href="javascript:;" style="">户外套装</a>
+                                            <a target="_blank" href="javascript:;" style="">户外椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">吊篮/吊椅</a>
+                                            <a target="_blank" href="javascript:;" style="">摇椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">折叠床</a>
+                                            <a target="_blank" href="javascript:;" style="">藤艺家具</a>
+                                            <a target="_blank" href="javascript:;" style="">办公桌</a>
+                                            <a target="_blank" href="javascript:;" style="">办公椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">办公沙发</a>
+                                            <a target="_blank" href="javascript:;" style="">文件柜</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">保险柜</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="">
+                                                <i class="i-t"></i>热门搜索
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content last">
+                                            <a target="_blank" href="javascript:;" style="">靠背椅</a>
+                                            <a target="_blank" href="javascript:;" style="">大班台</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sub-cat-brand Left">
+                                    <h6>推荐品牌</h6>
+                                    <div class="tag">
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">雅克集</a>
+                                        <a target="_blank" href="javascript:;" style="">欧凯隆</a>
+                                        <a target="_blank" href="javascript:;" style="">蒂美悦</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">RESTAR瑞仕达</a>
+                                        <a target="_blank" href="javascript:;" style="">浩一</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">HAOBIN浩彬</a>
+                                        <a target="_blank" href="javascript:;" style="">思家</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">艾斐堡</a> </div>
+                                    <a target="_blank" href="javascript:;" title="午后慵懒时光">
+                                        <img src="img/1532538552645266754.jpg" alt="午后慵懒时光" width="190" height="260" style="opacity: 1;">
+                                    </a>
+                                </div>
+                            </div>
+                            <i class="icon i6"></i>
+                            <a target="_blank" class="txt" href="javascript:;">餐厅</a>
+                            <a target="_blank" class="txt" href="javascript:;">餐桌</a>
+                            <a target="_blank" class="txt" href="javascript:;">餐椅</a>
+                        </li>
+                        <!-- 4 -->
+                        <li class="cat-item hover">
+                            <div class="sub-cat clearfix">
+                                <div class="sub-cat-links Left">
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="javascript:;">
+                                                <i class="i-t"></i>户外/办公
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content">
+                                            <a target="_blank" href="javascript:;" style="">户外套装</a>
+                                            <a target="_blank" href="javascript:;" style="">户外椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">吊篮/吊椅</a>
+                                            <a target="_blank" href="javascript:;" style="">摇椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">折叠床</a>
+                                            <a target="_blank" href="javascript:;" style="">藤艺家具</a>
+                                            <a target="_blank" href="javascript:;" style="">办公桌</a>
+                                            <a target="_blank" href="javascript:;" style="">办公椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">办公沙发</a>
+                                            <a target="_blank" href="javascript:;" style="">文件柜</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">保险柜</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="">
+                                                <i class="i-t"></i>热门搜索
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content last">
+                                            <a target="_blank" href="javascript:;" style="">靠背椅</a>
+                                            <a target="_blank" href="javascript:;" style="">大班台</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sub-cat-brand Left">
+                                    <h6>推荐品牌</h6>
+                                    <div class="tag">
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">雅克集</a>
+                                        <a target="_blank" href="javascript:;" style="">欧凯隆</a>
+                                        <a target="_blank" href="javascript:;" style="">蒂美悦</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">RESTAR瑞仕达</a>
+                                        <a target="_blank" href="javascript:;" style="">浩一</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">HAOBIN浩彬</a>
+                                        <a target="_blank" href="javascript:;" style="">思家</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">艾斐堡</a> </div>
+                                    <a target="_blank" href="javascript:;" title="午后慵懒时光">
+                                        <img src="img/1532538552645266754.jpg" alt="午后慵懒时光" width="190" height="260" style="opacity: 1;">
+                                    </a>
+                                </div>
+                            </div>
+                            <i class="icon i6"></i>
+                            <a target="_blank" class="txt" href="javascript:;">书房</a>
+                            <a target="_blank" class="txt" href="javascript:;">书桌</a>
+                            <a target="_blank" class="txt" href="javascript:;">书柜</a>
+                        </li>
+                        <!-- 5 -->
+                        <li class="cat-item hover">
+                            <div class="sub-cat clearfix">
+                                <div class="sub-cat-links Left">
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="javascript:;">
+                                                <i class="i-t"></i>户外/办公
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content">
+                                            <a target="_blank" href="javascript:;" style="">户外套装</a>
+                                            <a target="_blank" href="javascript:;" style="">户外椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">吊篮/吊椅</a>
+                                            <a target="_blank" href="javascript:;" style="">摇椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">折叠床</a>
+                                            <a target="_blank" href="javascript:;" style="">藤艺家具</a>
+                                            <a target="_blank" href="javascript:;" style="">办公桌</a>
+                                            <a target="_blank" href="javascript:;" style="">办公椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">办公沙发</a>
+                                            <a target="_blank" href="javascript:;" style="">文件柜</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">保险柜</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="">
+                                                <i class="i-t"></i>热门搜索
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content last">
+                                            <a target="_blank" href="javascript:;" style="">靠背椅</a>
+                                            <a target="_blank" href="javascript:;" style="">大班台</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sub-cat-brand Left">
+                                    <h6>推荐品牌</h6>
+                                    <div class="tag">
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">雅克集</a>
+                                        <a target="_blank" href="javascript:;" style="">欧凯隆</a>
+                                        <a target="_blank" href="javascript:;" style="">蒂美悦</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">RESTAR瑞仕达</a>
+                                        <a target="_blank" href="javascript:;" style="">浩一</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">HAOBIN浩彬</a>
+                                        <a target="_blank" href="javascript:;" style="">思家</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">艾斐堡</a> </div>
+                                    <a target="_blank" href="javascript:;" title="午后慵懒时光">
+                                        <img src="img/1532538552645266754.jpg" alt="午后慵懒时光" width="190" height="260" style="opacity: 1;">
+                                    </a>
+                                </div>
+                            </div>
+                            <i class="icon i6"></i>
+                            <a target="_blank" class="txt" href="javascript:;">儿童床</a>
+                            <a target="_blank" class="txt" href="javascript:;">儿童房</a>
+                            <a target="_blank" class="txt" href="javascript:;">儿童桌</a>
+                        </li>
+                        <!-- 6 -->
+                        <li class="cat-item hover">
+                            <div class="sub-cat clearfix">
+                                <div class="sub-cat-links Left">
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="javascript:;">
+                                                <i class="i-t"></i>户外/办公
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content">
+                                            <a target="_blank" href="javascript:;" style="">户外套装</a>
+                                            <a target="_blank" href="javascript:;" style="">户外椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">吊篮/吊椅</a>
+                                            <a target="_blank" href="javascript:;" style="">摇椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">折叠床</a>
+                                            <a target="_blank" href="javascript:;" style="">藤艺家具</a>
+                                            <a target="_blank" href="javascript:;" style="">办公桌</a>
+                                            <a target="_blank" href="javascript:;" style="">办公椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">办公沙发</a>
+                                            <a target="_blank" href="javascript:;" style="">文件柜</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">保险柜</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="">
+                                                <i class="i-t"></i>热门搜索
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content last">
+                                            <a target="_blank" href="javascript:;" style="">靠背椅</a>
+                                            <a target="_blank" href="javascript:;" style="">大班台</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sub-cat-brand Left">
+                                    <h6>推荐品牌</h6>
+                                    <div class="tag">
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">雅克集</a>
+                                        <a target="_blank" href="javascript:;" style="">欧凯隆</a>
+                                        <a target="_blank" href="javascript:;" style="">蒂美悦</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">RESTAR瑞仕达</a>
+                                        <a target="_blank" href="javascript:;" style="">浩一</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">HAOBIN浩彬</a>
+                                        <a target="_blank" href="javascript:;" style="">思家</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">艾斐堡</a> </div>
+                                    <a target="_blank" href="javascript:;" title="午后慵懒时光">
+                                        <img src="img/1532538552645266754.jpg" alt="午后慵懒时光" width="190" height="260" style="opacity: 1;">
+                                    </a>
+                                </div>
+                            </div>
+                            <i class="icon i6"></i>
+                            <a target="_blank" class="txt" href="javascript:;">户外/阳台</a>
+                            <a target="_blank" class="txt" href="javascript:;">办公家具</a>
+                        </li>
+                        <!-- 7 -->
+
+                        <li class="cat-item hover">
+                            <div class="sub-cat clearfix">
+                                <div class="sub-cat-links Left">
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="javascript:;">
+                                                <i class="i-t"></i>户外/办公
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content">
+                                            <a target="_blank" href="javascript:;" style="">户外套装</a>
+                                            <a target="_blank" href="javascript:;" style="">户外椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">吊篮/吊椅</a>
+                                            <a target="_blank" href="javascript:;" style="">摇椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">折叠床</a>
+                                            <a target="_blank" href="javascript:;" style="">藤艺家具</a>
+                                            <a target="_blank" href="javascript:;" style="">办公桌</a>
+                                            <a target="_blank" href="javascript:;" style="">办公椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">办公沙发</a>
+                                            <a target="_blank" href="javascript:;" style="">文件柜</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">保险柜</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="">
+                                                <i class="i-t"></i>热门搜索
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content last">
+                                            <a target="_blank" href="javascript:;" style="">靠背椅</a>
+                                            <a target="_blank" href="javascript:;" style="">大班台</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sub-cat-brand Left">
+                                    <h6>推荐品牌</h6>
+                                    <div class="tag">
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">雅克集</a>
+                                        <a target="_blank" href="javascript:;" style="">欧凯隆</a>
+                                        <a target="_blank" href="javascript:;" style="">蒂美悦</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">RESTAR瑞仕达</a>
+                                        <a target="_blank" href="javascript:;" style="">浩一</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">HAOBIN浩彬</a>
+                                        <a target="_blank" href="javascript:;" style="">思家</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">艾斐堡</a> </div>
+                                    <a target="_blank" href="javascript:;" title="午后慵懒时光">
+                                        <img src="img/1532538552645266754.jpg" alt="午后慵懒时光" width="190" height="260" style="opacity: 1;">
+                                    </a>
+                                </div>
+                            </div>
+                            <i class="icon i6"></i>
+                            <a target="_blank" class="txt" href="javascript:;">建材灯饰</a>
+
+                        </li>
+                        <!--8  -->
+
+                        <li class="cat-item hover">
+                            <div class="sub-cat clearfix">
+                                <div class="sub-cat-links Left">
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="javascript:;">
+                                                <i class="i-t"></i>户外/办公
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content">
+                                            <a target="_blank" href="javascript:;" style="">户外套装</a>
+                                            <a target="_blank" href="javascript:;" style="">户外椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">吊篮/吊椅</a>
+                                            <a target="_blank" href="javascript:;" style="">摇椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">折叠床</a>
+                                            <a target="_blank" href="javascript:;" style="">藤艺家具</a>
+                                            <a target="_blank" href="javascript:;" style="">办公桌</a>
+                                            <a target="_blank" href="javascript:;" style="">办公椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">办公沙发</a>
+                                            <a target="_blank" href="javascript:;" style="">文件柜</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">保险柜</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="">
+                                                <i class="i-t"></i>热门搜索
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content last">
+                                            <a target="_blank" href="javascript:;" style="">靠背椅</a>
+                                            <a target="_blank" href="javascript:;" style="">大班台</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sub-cat-brand Left">
+                                    <h6>推荐品牌</h6>
+                                    <div class="tag">
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">雅克集</a>
+                                        <a target="_blank" href="javascript:;" style="">欧凯隆</a>
+                                        <a target="_blank" href="javascript:;" style="">蒂美悦</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">RESTAR瑞仕达</a>
+                                        <a target="_blank" href="javascript:;" style="">浩一</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">HAOBIN浩彬</a>
+                                        <a target="_blank" href="javascript:;" style="">思家</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">艾斐堡</a> </div>
+                                    <a target="_blank" href="javascript:;" title="午后慵懒时光">
+                                        <img src="img/1532538552645266754.jpg" alt="午后慵懒时光" width="190" height="260" style="opacity: 1;">
+                                    </a>
+                                </div>
+                            </div>
+                            <i class="icon i6"></i>
+                            <a target="_blank" class="txt" href="javascript:;">灯饰照明</a>
+                            <a target="_blank" class="txt" href="javascript:;">吊灯</a>
+                            <a target="_blank" class="txt" href="javascript:;">吸顶灯</a>
+                        </li>
+                        <!-- 9 -->
+                        <li class="cat-item hover">
+                            <div class="sub-cat clearfix">
+                                <div class="sub-cat-links Left">
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="javascript:;">
+                                                <i class="i-t"></i>户外/办公
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content">
+                                            <a target="_blank" href="javascript:;" style="">户外套装</a>
+                                            <a target="_blank" href="javascript:;" style="">户外椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">吊篮/吊椅</a>
+                                            <a target="_blank" href="javascript:;" style="">摇椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">折叠床</a>
+                                            <a target="_blank" href="javascript:;" style="">藤艺家具</a>
+                                            <a target="_blank" href="javascript:;" style="">办公桌</a>
+                                            <a target="_blank" href="javascript:;" style="">办公椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">办公沙发</a>
+                                            <a target="_blank" href="javascript:;" style="">文件柜</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">保险柜</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="">
+                                                <i class="i-t"></i>热门搜索
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content last">
+                                            <a target="_blank" href="javascript:;" style="">靠背椅</a>
+                                            <a target="_blank" href="javascript:;" style="">大班台</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sub-cat-brand Left">
+                                    <h6>推荐品牌</h6>
+                                    <div class="tag">
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">雅克集</a>
+                                        <a target="_blank" href="javascript:;" style="">欧凯隆</a>
+                                        <a target="_blank" href="javascript:;" style="">蒂美悦</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">RESTAR瑞仕达</a>
+                                        <a target="_blank" href="javascript:;" style="">浩一</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">HAOBIN浩彬</a>
+                                        <a target="_blank" href="javascript:;" style="">思家</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">艾斐堡</a> </div>
+                                    <a target="_blank" href="javascript:;" title="午后慵懒时光">
+                                        <img src="img/1532538552645266754.jpg" alt="午后慵懒时光" width="190" height="260" style="opacity: 1;">
+                                    </a>
+                                </div>
+                            </div>
+                            <i class="icon i6"></i>
+                            <a target="_blank" class="txt" href="javascript:;">卫浴</a>
+                            <a target="_blank" class="txt" href="javascript:;">墙地面</a>
+                            <a target="_blank" class="txt" href="javascript:;">地板</a>
+                        </li>
+
+                        <!-- 10 -->
+                        <li class="cat-item hover">
+                            <div class="sub-cat clearfix">
+                                <div class="sub-cat-links Left">
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="javascript:;">
+                                                <i class="i-t"></i>户外/办公
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content">
+                                            <a target="_blank" href="javascript:;" style="">户外套装</a>
+                                            <a target="_blank" href="javascript:;" style="">户外椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">吊篮/吊椅</a>
+                                            <a target="_blank" href="javascript:;" style="">摇椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">折叠床</a>
+                                            <a target="_blank" href="javascript:;" style="">藤艺家具</a>
+                                            <a target="_blank" href="javascript:;" style="">办公桌</a>
+                                            <a target="_blank" href="javascript:;" style="">办公椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">办公沙发</a>
+                                            <a target="_blank" href="javascript:;" style="">文件柜</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">保险柜</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="">
+                                                <i class="i-t"></i>热门搜索
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content last">
+                                            <a target="_blank" href="javascript:;" style="">靠背椅</a>
+                                            <a target="_blank" href="javascript:;" style="">大班台</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sub-cat-brand Left">
+                                    <h6>推荐品牌</h6>
+                                    <div class="tag">
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">雅克集</a>
+                                        <a target="_blank" href="javascript:;" style="">欧凯隆</a>
+                                        <a target="_blank" href="javascript:;" style="">蒂美悦</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">RESTAR瑞仕达</a>
+                                        <a target="_blank" href="javascript:;" style="">浩一</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">HAOBIN浩彬</a>
+                                        <a target="_blank" href="javascript:;" style="">思家</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">艾斐堡</a> </div>
+                                    <a target="_blank" href="javascript:;" title="午后慵懒时光">
+                                        <img src="img/1532538552645266754.jpg" alt="午后慵懒时光" width="190" height="260" style="opacity: 1;">
+                                    </a>
+                                </div>
+                            </div>
+                            <i class="icon i6"></i>
+                            <a target="_blank" class="txt" href="javascript:;">家居</a>
+                            <a target="_blank" class="txt" href="javascript:;">家饰</a>
+                        </li>
+
+                        <!-- 11 -->
+
+                        <li class="cat-item hover">
+                            <div class="sub-cat clearfix">
+                                <div class="sub-cat-links Left">
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="javascript:;">
+                                                <i class="i-t"></i>户外/办公
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content">
+                                            <a target="_blank" href="javascript:;" style="">户外套装</a>
+                                            <a target="_blank" href="javascript:;" style="">户外椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">吊篮/吊椅</a>
+                                            <a target="_blank" href="javascript:;" style="">摇椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">折叠床</a>
+                                            <a target="_blank" href="javascript:;" style="">藤艺家具</a>
+                                            <a target="_blank" href="javascript:;" style="">办公桌</a>
+                                            <a target="_blank" href="javascript:;" style="">办公椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">办公沙发</a>
+                                            <a target="_blank" href="javascript:;" style="">文件柜</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">保险柜</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="">
+                                                <i class="i-t"></i>热门搜索
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content last">
+                                            <a target="_blank" href="javascript:;" style="">靠背椅</a>
+                                            <a target="_blank" href="javascript:;" style="">大班台</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sub-cat-brand Left">
+                                    <h6>推荐品牌</h6>
+                                    <div class="tag">
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">雅克集</a>
+                                        <a target="_blank" href="javascript:;" style="">欧凯隆</a>
+                                        <a target="_blank" href="javascript:;" style="">蒂美悦</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">RESTAR瑞仕达</a>
+                                        <a target="_blank" href="javascript:;" style="">浩一</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">HAOBIN浩彬</a>
+                                        <a target="_blank" href="javascript:;" style="">思家</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">艾斐堡</a> </div>
+                                    <a target="_blank" href="javascript:;" title="午后慵懒时光">
+                                        <img src="img/1532538552645266754.jpg" alt="午后慵懒时光" width="190" height="260" style="opacity: 1;">
+                                    </a>
+                                </div>
+                            </div>
+                            <i class="icon i6"></i>
+                            <a target="_blank" class="txt" href="javascript:;">床上用品</a>
+                            <a target="_blank" class="txt" href="javascript:;">布艺织物</a>
+                        </li>
+                        <!-- 12 -->
+
+                        <li class="cat-item hover">
+                            <div class="sub-cat clearfix">
+                                <div class="sub-cat-links Left">
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="javascript:;">
+                                                <i class="i-t"></i>户外/办公
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content">
+                                            <a target="_blank" href="javascript:;" style="">户外套装</a>
+                                            <a target="_blank" href="javascript:;" style="">户外椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">吊篮/吊椅</a>
+                                            <a target="_blank" href="javascript:;" style="">摇椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">折叠床</a>
+                                            <a target="_blank" href="javascript:;" style="">藤艺家具</a>
+                                            <a target="_blank" href="javascript:;" style="">办公桌</a>
+                                            <a target="_blank" href="javascript:;" style="">办公椅</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">办公沙发</a>
+                                            <a target="_blank" href="javascript:;" style="">文件柜</a>
+                                            <a target="_blank" href="javascript:;" style="color:#cf000e !important">保险柜</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="sub-group clearfix">
+                                        <li class="Left sub-title">
+                                            <a target="_blank" href="">
+                                                <i class="i-t"></i>热门搜索
+                                            </a>
+                                        </li>
+                                        <li class="Left sub-content last">
+                                            <a target="_blank" href="javascript:;" style="">靠背椅</a>
+                                            <a target="_blank" href="javascript:;" style="">大班台</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sub-cat-brand Left">
+                                    <h6>推荐品牌</h6>
+                                    <div class="tag">
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">雅克集</a>
+                                        <a target="_blank" href="javascript:;" style="">欧凯隆</a>
+                                        <a target="_blank" href="javascript:;" style="">蒂美悦</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">RESTAR瑞仕达</a>
+                                        <a target="_blank" href="javascript:;" style="">浩一</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">HAOBIN浩彬</a>
+                                        <a target="_blank" href="javascript:;" style="">思家</a>
+                                        <a target="_blank" href="javascript:;" style="color:#cf000e !important">艾斐堡</a> </div>
+                                    <a target="_blank" href="javascript:;" title="午后慵懒时光">
+                                        <img src="img/1532538552645266754.jpg" alt="午后慵懒时光" width="190" height="260" style="opacity: 1;">
+                                    </a>
+                                </div>
+                            </div>
+                            <i class="icon i6"></i>
+                            <a target="_blank" class="txt" href="javascript:;">家具饰品</a>
+                            <a target="_blank" class="txt" href="javascript:;">居家用品</a>
+                        </li>
+                        <!-- 13 -->
+
+
+                    </ul>
+                </div>
+                <ul class="navigator">
+                    <li class="current">
+                        <a id="JS_Header_Home_Link" href="javascript:;" target="_blank" title="首页">首页</a>
+                    </li>
+                    <li>
+                        <a id="" href="javascript:;" target="_blank" title="家具城">家具城</a>
+                    </li>
+                    <li>
+                        <a id="" href="javascript:;" target="_blank" title="建材城">建材城</a>
+                    </li>
+                    <li id="JS_mll_head_menu_jiashi">
+                        <a id="" href="javascript:;" target="_blank" title="家居家饰">家居家饰</a>
+                    </li>
+                    <li>
+                        <a id="" href="javascript:;" target="_blank" title="团购">团购</a>
+                    </li>
+                    <li>
+                        <a id="JS_mll_head_menu_expr" href="javascript:;" target="_blank" title="体验馆">体验馆</a>
+                    </li>
+                    <li>
+                        <a id="" href="javascript:;" target="_blank" title="阅木">阅木</a>
+                    </li>
+                    <li>
+                        <a id="" href="javascript:;" target="_blank" title="晒家">晒家</a>
+                    </li>
+                    <li>
+                        <a id="" href="javascript:;" target="_blank" title="图览家居">图览家居</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="script/js/jquery.js"></script>
+    <script>
+        $('.nain_head_logreg').load('nain_head_logreg.html');
+    </script>
+    <!--  <script src="script/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        function addCookie(key, value, day) {
+            var date = new Date(); //创建日期对象
+            date.setDate(date.getDate() + day); //过期时间：获取当前的日期+天数，设置给date
+            document.cookie = key + '=' + encodeURI(value) + ';expires=' + date; //添加cookie，设置过期时间
+        }
+
+        function getCookie(key) {
+            var str = decodeURI(document.cookie);
+            var arr = str.split('; ');
+            for (var i = 0; i < arr.length; i++) {
+                var arr1 = arr[i].split('=');
+                if (arr1[0] == key) {
+                    return arr1[1];
+                }
+            }
+        }
+
+        function delCookie(key, value) {
+            addCookie(key, value, -1); //添加的函数,将时间设置为过去时间
+        }
+
+
+        //显示隐藏
+        $(function() {
+            if (getCookie('UserName')) {
+                $('.login').hide();
+                $('.admin').show().find('span').html('你好,' + getCookie('UserName'));
+            }
+            $('.admin a').on('click', function() {
+                delCookie('UserName', '', -1);
+                $('.admin').hide();
+                $('.login').show();
+            });
+        });
+    </script> -->
+</body>
+
+</html>

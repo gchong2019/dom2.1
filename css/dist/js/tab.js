@@ -1,0 +1,1 @@
+!function(){var s=$("#jsIndexData .classify-btn .btn"),a=$("#jsIndexData .classify-detail .fadeInClass");s.on("click",function(){$(this).addClass("current").siblings("div").removeClass("current"),a.eq($(this).index()).addClass("show").siblings("li").removeClass("show")})}();

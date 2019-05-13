@@ -1,0 +1,57 @@
+@charset "utf-8";
+//中文字符编码格式
+//:单行注释，编译后不显示
+
+/* 多行注释：压缩后不显示 */
+
+
+/*！ 强制注释：一直显示 */
+
+$AD_tonglan_width:100%;
+$AD_tonglan_height:50px;
+$AD_tonglan_bg:#22d9b6;
+.AD_tonglan {
+    width: $AD_tonglan_width;
+    height: $AD_tonglan_height;
+    background: $AD_tonglan_bg;
+    // font-size: 120px-100;
+    // font-family: 'Microsoft yahei';
+    // color: $box_bg;
+    // line-height: 20px;
+    // #{$t}: none;
+    // border: $borderstyle;
+}
+
+$MLL_head_width:980px;
+$MLL_head_height:50px;
+.MLL_head {
+    width: $MLL_head_width;
+    height: $MLL_head_height;
+    margin: 0 auto;
+}
+
+$a_color:#333;
+$a_text_Dec:none;
+a {
+    text-decoration: $a_text_Dec;
+    color: $a_color;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+$img_overF:hidden;
+$img_ver-al:top;
+$img_bg:#eee;
+img {
+    overflow: $img_overF;
+    vertical-align: $img_ver-al;
+    background: $img_bg;
+    background: none;
+}

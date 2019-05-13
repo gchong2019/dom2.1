@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>购物车</title>
+</head>
+
+<body>
+    <!-- 头部第一块 -->
+    <div class="header"></div>
+    <!-- 头部第二块 -->
+    <div class="header_content"></div>
+
+    <form action="/flow/?step=pre_checkout" method="post" id="JS_pre_check_form" target="_self">
+        <div class="w mt20 cart_table" id="JS_list_table_cb">
+            <div class="cart-table-title">
+                <ul class="clearfix">
+                    <li class="input-checked">
+                        <div class="mock_checkbox_wrap">
+                            <input type="checkbox" id="J-select-all-0" class="JS_checkall_cb mock_checkbox" onclick="ShoppingCart.module.selectAll(this);" title="全选">
+                            <label class="mock_checkbox_label" for="J-select-all-0"></label>
+                        </div>
+                    </li>
+                    <li class="lbn l select_btn_all">全选</li>
+                    <li class="goods">商品</li>
+                    <li class="price">单价</li>
+                    <li class="number">数量</li>
+                    <li class="money">金额</li>
+                    <li class="edit">操作</li>
+                </ul>
+            </div>
+            <div class="shop-cart-info">
+                <div id="JS_cart_body_1" class="JS_cart_body">
+
+                    <div class="add_discount ">
+                        <div class="goods-list-info">
+
+                            <div class="goods-info">
+                                <ul id="JS_cart_tr_32587617" class="goods_item JS_cart_act_0 clearfix checked" data-act_id="0" data-activity-id="1734" data-rec_id="32587617" data-goods_id="162754" data-goods_num="1" data-activity="add_discount" data-gift_kind="0" data-shopid="1">
+                                    <li class="td_checkbox">
+                                        <div class="mock_checkbox_wrap">
+                                            <input type="checkbox" data-key="1" data-goods-id="162754" data-type="0" data-shop="1" checked="checked" id="JS_delete_checkbox_32587617" value="32587617" class="mock_checkbox goods_select goods_select_0" name="rec_id[32587617]" data-auction_id="0">
+                                            <label class="mock_checkbox_label" for="JS_delete_checkbox_32587617"></label>
+                                        </div>
+                                        <input type="hidden" name="act_id[32587617]" value="1734">
+
+                                    </li>
+                                    <li class="information">
+                                        <div class="goods-pic Left">
+                                            <a href="/category-canyi/goods-162754.html" target="_blank"><img class="img" data-big-src="//img001.mllres.com/images/small/268/width/210/height/139/mode/1/encrypt/821d6494dc4a2c0ed35b23314ec04ce2/path/YKkxtD0+l8CT6mdTP0jUTosXyzGqRaYb484nDncYwHPPc42TC6vxXk1I1Zp+MDU_TV9zpRd0B3OyG6F28IWAOQ==.jpg"
+                                                    src="//img001.mllres.com/images/small/268/width/210/height/139/mode/1/encrypt/821d6494dc4a2c0ed35b23314ec04ce2/path/YKkxtD0+l8CT6mdTP0jUTosXyzGqRaYb484nDncYwHPPc42TC6vxXk1I1Zp+MDU_TV9zpRd0B3OyG6F28IWAOQ==.jpg"
+                                                    width="117" height="76" title="查看商品"></a>
+                                        </div>
+                                        <div class="goods_title Left">
+                                            <a href="/category-canyi/goods-162754.html" target="_blank">温馨时尚 全实木手工雕刻 头层黄牛皮软包餐椅</a>
+                                            <br>
+
+                                        </div>
+                                        <div class="goods_model Left">
+                                            <p>类型：真皮椅【坐高：510mm】</p>
+                                        </div>
+                                    </li>
+                                    <li class="yen shop_price">
+
+                                        <p class="shop_price_32587617" data-shop-price="1599.00" data-original-price="1599">¥1599.00</p>
+
+                                    </li>
+                                    <li class="m_goods_num" data-num="1">
+                                        <div class="clearfix number">
+                                            <a href="javascript:;" onclick="ShoppingCart.module.changGoodsCount('32587617','162754',-1,false,'0');return false;" class="Left sub" title="减少数量"></a>
+                                            <input onkeydown="if(event.keyCode==13){return false;}" onchange="this.value=(this.value+'').replace(/\D/g,'');ShoppingCart.module.changGoodsCount('32587617','162754',this.value,true,'0');" id="JS_goods_number_32587617" class="Left num JS_cart_num_0"
+                                                value="1" data-show_price="1599.00" data-shop_price="1599" data-rec_id="32587617" data-goods_id="162754">
+                                            <a class="Left add" href="javascript:;" onclick="ShoppingCart.module.changGoodsCount('32587617','162754',1,false,'0');return false;" title="增加数量"></a>
+                                            <span class="Left unit">件</span>
+                                        </div>
+
+                                    </li>
+                                    <li class="yen goods-money">
+                                        <div class="goods_subtotal">¥<span id="JS_goods_subtotal_32587617" class="JS_goods_subtotal">1599</span></div>
+                                    </li>
+                                    <li class="goods_handle">
+                                        <a class="color6" href="javascript:void(0);" data-rec_id="32587617" onclick="return ShoppingCart.module.flow_confirm(this,'<p><span>删除商品</span>确定要删除此商品吗？</p>')">删除</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="other  none ">
+                        <div class="activity-title-box">
+                        </div>
+                        <div class="goods-list-info">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- footer1第四块 -->
+    <div class="footer1"></div>
+
+    <!-- footer4第五块 -->
+    <div class="footer4"></div>
+    <script src="script/js/jquery.js"></script>
+    <script>
+        $('.header').load('head.html');
+        $('.header_content').load('nain_head3.html');
+        $('.footer1').load('footer1.html');
+        $('.footer4').load('footer3.html');
+    </script>
+
+</body>
+
+</html>

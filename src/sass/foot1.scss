@@ -1,0 +1,236 @@
+@charset "utf-8";
+//中文字符编码格式
+//:单行注释，编译后不显示
+
+/* 多行注释：压缩后不显示 */
+
+
+/*！ 强制注释：一直显示 */
+
+$min_W:1200px;
+$mll-footer_W:100%;
+$footer_W:100px;
+$footer_H:100px;
+$pad_top:0;
+$footer_bg:#f8f8f8;
+$position_cen:center;
+$a_color:#333;
+$a_text_Dec:none;
+$distance_0:0;
+$display_ib:inline-block;
+$font_daxiao:14px;
+$color_black:#000;
+$AD_tonglan_bg:#22d9b6;
+body {
+    margin: 0 auto;
+    font-family: Microsoft YaHei, Arial;
+    _font-family: 宋体, Arial;
+    font-size: 12px;
+}
+
+.mll-footer {
+    min-width: $min_W;
+    padding-top: $pad_top;
+    width: $mll-footer_W;
+}
+
+* {
+    margin: $distance_0;
+    padding: $distance_0;
+    border: $distance_0;
+    outline: $distance_0;
+    font-size: $mll-footer_W;
+    vertical-align: baseline;
+}
+
+.mll-footer .footer-icon {
+    background: $footer_bg;
+    padding: ($footer_W)-65 $pad_top;
+    border-bottom: 1px solid #ededed;
+    text-align: $position_cen;
+}
+
+._view_ {
+    width: $footer_W+1100;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mll-footer {
+    .footer-icon {
+        .icon-1 {
+            background-position: $distance_0 $distance_0;
+        }
+        .icon-2 {
+            background-position: -50px $distance_0;
+        }
+        .icon-3 {
+            background-position: -100px $distance_0;
+        }
+        .icon-4 {
+            background-position: -150px $distance_0;
+        }
+        .icon-5 {
+            background-position: $distance_0 -50px;
+        }
+        .icon-6 {
+            background-position: -50px -50px;
+        }
+        .icon-7 {
+            background-position: -100px -50px;
+        }
+        .icon-8 {
+            background-position: -150px -50px;
+        }
+        a {
+            width: 146px!important;
+            display: inline-block;
+            height: ($footer_H)-20;
+        }
+        i {
+            display: $display_ib;
+            width: ($footer_W)-50;
+            height: ($footer_H)-50px;
+            margin: $distance_0 auto;
+            background: url(../img/footerIcon.png) no-repeat;
+        }
+        span {
+            display: $display_ib;
+            width: $mll-footer_W;
+            font-size: $font_daxiao;
+            color: $color_black;
+            text-align: $position_cen;
+            margin-top: ($footer_W)-90;
+        }
+    }
+}
+
+a {
+    text-decoration: $a_text_Dec;
+    color: $a_color;
+}
+
+// .mll-footer {
+//     .footer-help {
+//         .summary {
+//             .s1 {
+//                 font-size: 14px;
+//                 line-height: 19px;
+//             }
+//             .s2 {
+//                 font-size: 20px;
+//                 color: #e62318;
+//                 margin: 5px 0;
+//             }
+//             .s3 {
+//                 color: #999;
+//                 margin-bottom: 30px;
+//             }
+//             .s4 {
+//                 a {
+//                     display: inline-block;
+//                     color: #e62318;
+//                     border: 1px solid #e62318;
+//                     width: 106px;
+//                     height: 24px;
+//                     text-align: center;
+//                     line-height: 24px;
+//                     padding-left: 10px;
+//                     position: relative;
+//                 }
+//                 .coord {
+//                     display: block;
+//                     width: 11px;
+//                     height: 14px;
+//                     background-position: -11px -265px;
+//                     left: 5px;
+//                     top: 5px;
+//                 }
+//                 margin-bottom: 10px;
+//             }
+//             .s5 {
+//                 a {
+//                     display: inline-block;
+//                     color: #e62318;
+//                     border: 1px solid #e62318;
+//                     width: 106px;
+//                     height: 24px;
+//                     text-align: center;
+//                     line-height: 24px;
+//                     padding-left: 10px;
+//                     position: relative;
+//                 }
+//                 .mobile {
+//                     width: 10px;
+//                     height: 13px;
+//                     background-position: 0 -265px;
+//                     left: 6px;
+//                     top: 6px;
+//                 }
+//             }
+//             width: 240px;
+//             height: 165px;
+//             background: url(../img/footer.png) 0 -100px no-repeat;
+//             float: left;
+//         }
+//         .article {
+//             dl {
+//                 .weixin {
+//                     width: 96px;
+//                 }
+//                 float: left;
+//                 width: 151px;
+//             }
+//             dt {
+//                 color: #444;
+//                 font-size: 14px;
+//                 padding: 3px 0 5px;
+//             }
+//             dd {
+//                 a {
+//                     display: block;
+//                     color: #999;
+//                     margin-top: 9px;
+//                 }
+//             }
+//             width: 851px;
+//             float: right;
+//         }
+//         background: #f8f8f8;
+//         padding: 35px 0 54px;
+//     }
+// }
+// dd {
+//     display: block;
+//     margin-inline-start: 40px;
+// }
+// .red,
+// a.red {
+//     color: #e62318!important;
+// }
+// .clearfix {
+//     *zoom: 1;
+// }
+// img {
+//     overflow: hidden;
+//     vertical-align: top;
+//     background: #eee;
+// }
+// li {
+//     display: list-item;
+//     text-align: -webkit-match-parent;
+// }
+// .box {
+//     border: {
+//         left: {
+//             width: 1px;
+//             style: dashed;
+//             color: red;
+//         }
+//         top: {
+//             width: 1px;
+//             style: dashed;
+//             color: red;
+//         }
+//     }
+// }

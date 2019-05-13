@@ -1,0 +1,1 @@
+require.config({baseUrl:"https://cdnjs.cloudflare.com/ajax/libs/",paths:{jquery:"jquery/3.4.0/jquery.min",jqcookie:"jquery-cookie/1.4.1/jquery.cookie.min",lazyload:"jquery.lazyload/1.9.1/jquery.lazyload.min",validate:"jquery-validate/1.19.0/jquery.validate.min"},shim:{}});

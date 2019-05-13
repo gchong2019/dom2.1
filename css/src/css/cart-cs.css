@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/* 多行注释：压缩后不显示 */
+/*！ 强制注释：一直显示 */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  margin: 0 auto;
+  font-family: Microsoft YaHei, Arial;
+  _font-family: 宋体, Arial;
+  font-size: 12px;
+}
+
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.cart_table {
+  margin-top: 0;
+}
+
+.w {
+  width: 1190px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart_table .cart-table-title li.lbn {
+  width: 80px;
+}
+.cart_table .cart-table-title li.goods {
+  width: 456px;
+}
+.cart_table .cart-table-title li.price {
+  width: 160px;
+}
+.cart_table .cart-table-title li.number {
+  width: 180px;
+}
+.cart_table .cart-table-title li.edit {
+  width: 125px;
+}
+.cart_table .cart-table-title li.money {
+  width: 116px;
+}
+.cart_table .cart-table-title li {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  color: #676767;
+  text-align: center;
+}
+.cart_table .cart-table-title li .mock_checkbox_wrap {
+  margin-top: 13px;
+}
+.cart_table .cart-table-title li.input-checked {
+  width: 73px;
+}
+.cart_table .cart-table-title ul {
+  background-color: #eee;
+}
+.cart_table .JS_cart_body {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.mock_checkbox_wrap {
+  position: relative;
+  width: 15px;
+  height: 13px;
+  margin: 0 10px 0 17px;
+  overflow: hidden;
+}
+
+.mock_checkbox_wrap {
+  margin-top: 13px;
+}
+.mock_checkbox_wrap .mock_checkbox_label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 13px;
+  background: url(../img/flow_cart_bg_new.png) no-repeat 0 0;
+}
+
+input {
+  outline: none;
+}
+
+.shop-cart-info .goods_item > li.goods_handle {
+  width: 123px;
+  text-align: center;
+}
+.shop-cart-info .goods_item > li.goods-money {
+  width: 116px;
+  text-align: center;
+}
+.shop-cart-info .goods_item > li.goods-money .goods_subtotal {
+  line-height: 1.5;
+  font-weight: 700;
+  color: #555;
+}
+.shop-cart-info .goods_item > li.m_goods_num {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 40px;
+  width: 180px;
+}
+.shop-cart-info .goods_item > li.m_goods_num .number {
+  display: inline-block;
+}
+.shop-cart-info .goods_item > li.shop_price {
+  width: 160px;
+  text-align: center;
+}
+.shop-cart-info .goods_item > li.information {
+  width: 536px;
+}
+.shop-cart-info .goods_item > li.information .goods_title {
+  float: left;
+  padding-left: 15px;
+  width: 185px;
+}
+.shop-cart-info .goods_item > li.information .goods_title a {
+  display: inline-block;
+  width: 185px;
+}
+.shop-cart-info .goods_item > li {
+  float: left;
+  position: relative;
+}
+.shop-cart-info .goods_item > li.td_checkbox {
+  width: 73px;
+}
+.shop-cart-info .goods_item {
+  padding: 25px 0;
+  height: 80px;
+  border-top: solid 1px #ddd;
+}
+.shop-cart-info .goods_item .goods_item > li {
+  float: left;
+  position: relative;
+}
+.shop-cart-info .goods-list-info .goods-info .checked {
+  background-color: #fefaf1;
+}
+
+.mock_checkbox_wrap {
+  position: relative;
+  width: 15px;
+  height: 13px;
+  margin: 0 10px 0 17px;
+  overflow: hidden;
+}
+.mock_checkbox_wrap .mock_checkbox_label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 13px;
+  background: url(../img/flow_cart_bg_new.png) no-repeat 0 0;
+}
+
+input.mock_checkbox {
+  position: absolute;
+  top: -13px;
+  left: -13px;
+  margin: 0;
+}
+
+.Left {
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  overflow: hidden;
+  vertical-align: top;
+  background: #eee;
+}
+
+.cart_table .activity-title-box {
+  height: 37px;
+  text-align: left;
+  line-height: 1;
+  border-top: solid 1px #aaa;
+}
+.cart_table .goods_handle a {
+  display: block;
+  margin-top: 2px;
+}
+.cart_table .number .unit {
+  display: block;
+  height: 20px;
+  padding-left: 8px;
+  line-height: 20px;
+  color: #999;
+}
+.cart_table .number a.add {
+  background-position: -21px -149px;
+}
+.cart_table .number .num {
+  position: static;
+  width: 40px;
+  height: 18px;
+  border: 1px solid #ccc;
+  padding: 0;
+  margin: 0;
+  line-height: 18px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  background: 0 0;
+  visibility: visible;
+}
+.cart_table .number a {
+  display: block;
+  width: 21px;
+  height: 20px;
+  background: url(../img/flow_cart_bg_new.png) 0 -149px no-repeat;
+}
+.cart_table .goods_model {
+  width: 120px;
+  margin-left: 30px;
+  line-height: 1.5;
+  text-align: left;
+  color: #999;
+  overflow: hidden;
+}
+.cart_table .img {
+  padding: 1px;
+  background: #fff;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.yen {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  outline: none;
+}
+
+.none {
+  display: none;
+}
+
+#JS_list_table_cb {
+  margin-top: 8px;
+}
+
+/*# sourceMappingURL=cart-cs.css.map */

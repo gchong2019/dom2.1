@@ -1,0 +1,248 @@
+@charset "UTF-8";
+/* 多行注释：压缩后不显示 */
+/*！ 强制注释：一直显示 */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  margin: 0 auto;
+  font-family: Microsoft YaHei, Arial;
+  _font-family: 宋体, Arial;
+  font-size: 12px;
+}
+
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.scroll-banner {
+  width: 1200px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  height: 460px;
+}
+.scroll-banner .scroll-item {
+  position: absolute;
+  width: 1200px;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+.scroll-banner .scroll-item .sc-small {
+  position: absolute;
+  right: 180px;
+  top: 0;
+  background: 0 0;
+}
+.scroll-banner .scroll-content {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 460px;
+}
+.scroll-banner .scroll-content li {
+  float: left;
+  height: 460px;
+  width: 100%;
+}
+.scroll-banner .scroll-index {
+  position: relative;
+  -webkit-filter: inherit;
+  filter: inherit;
+  width: 1200px;
+  height: 460px;
+  margin: 0 auto;
+}
+.scroll-banner .pr {
+  position: relative;
+  z-index: 200;
+}
+.scroll-banner .pr .expr-opacity {
+  z-index: 199;
+  background: #fff;
+  opacity: .9;
+  filter: alpha(opacity=90);
+  *filter: alpha(opacity=90);
+  _filter: alpha(opacity=90);
+  position: absolute;
+  width: 180px;
+  height: 360px;
+  right: 0;
+  top: 50px;
+}
+.scroll-banner .pr .expr-link {
+  z-index: 200;
+  position: absolute;
+  width: 180px;
+  height: 360px;
+  right: 0;
+  top: 50px;
+}
+.scroll-banner .pr .expr-link .word-list {
+  text-align: center;
+  margin: 34px auto 0 auto;
+}
+.scroll-banner .pr .expr-link .word-list p {
+  color: #999;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: '微软雅黑';
+}
+.scroll-banner .pr .expr-link .word-list p span {
+  color: #e62318;
+}
+.scroll-banner .pr .expr-link .img-list {
+  position: relative;
+}
+.scroll-banner .pr .expr-link .img-list .pavilio {
+  background: url(../img/index.png) 0 -599px no-repeat;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  display: block;
+}
+.scroll-banner .pr .expr-link .img-list .expr-btn {
+  position: absolute;
+  top: 116px;
+  left: 28px;
+  display: block;
+  width: 124px;
+  height: 32px;
+  background: url(../img/index.png) 0 -730px no-repeat;
+}
+.scroll-banner .pr .expr-link .word {
+  text-align: center;
+  margin: 25px 0 23px 0;
+}
+.scroll-banner .pr .expr-link .word .city-num {
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-top: 5px;
+}
+.scroll-banner .pr .expr-link .word .city-num span {
+  font-size: 20px;
+}
+.scroll-banner .pr .expr-link .word p {
+  color: #999;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 3px;
+  font-family: '微软雅黑';
+}
+.scroll-banner .pr .expr-link .word p span {
+  color: #e62318;
+}
+
+.w {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+@media screen and (min-width: 0px) {
+  .scroll-banner .scroll-item .sc-big {
+    position: relative;
+  }
+}
+.fadeInR {
+  -webkit-animation-name: fadeInR;
+  animation-name: fadeInR;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-iteration-count: 1;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+}
+
+.fadeInL {
+  -webkit-animation-name: fadeInL;
+  animation-name: fadeInL;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+}
+
+img {
+  overflow: hidden;
+  vertical-align: top;
+  background: #eee;
+}
+
+.scroll-btn {
+  position: absolute;
+  overflow: hidden;
+  bottom: 30px;
+  z-index: 3;
+  width: 100%;
+  text-align: center;
+}
+.scroll-btn span {
+  display: inline-block;
+  width: 30px;
+  height: 5px;
+  margin: 0 1px;
+  cursor: pointer;
+  background: #fff;
+}
+.scroll-btn span current {
+  background: #333;
+}
+
+a:hover {
+  color: #e62318 !important;
+}
+
+.scroll-banner .pr .expr-link .img-list .expr-btn:hover {
+  background-position: 0 -763px;
+}
+
+/* 在写样式的时候加的 */
+.scroll-btn span.current {
+  background: #333;
+}
+
+#left,
+#right {
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -70px;
+  font-size: 100px;
+  display: none;
+}
+
+#left {
+  left: 20px;
+}
+
+#right {
+  right: 20px;
+}
+
+/*# sourceMappingURL=cs-banner.css.map */

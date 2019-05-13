@@ -1,0 +1,1 @@
+$("#jsIndexData .bigimg").mouseenter(function(){var t=1.2*$(this).width(),i=1.2*$(this).height();$(this).stop().animate({width:t,height:i,left:"-"+.2*$(this).width()/2,top:"-"+.2*$(this).height()/2},1e3)}).mouseleave(function(){$(this).stop().animate({width:"100%",height:"100%",left:"0px",top:"0px"},1e3)});

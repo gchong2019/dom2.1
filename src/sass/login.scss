@@ -1,0 +1,380 @@
+@charset "utf-8";
+//中文字符编码格式
+//:单行注释，编译后不显示
+
+/* 多行注释：压缩后不显示 */
+
+
+/*！ 强制注释：一直显示 */
+
+$min_W:1200px;
+$mll-footer_W:100%;
+$footer_W:100px;
+$footer_H:100px;
+$pad_top:0;
+$footer_bg:#f8f8f8;
+$position_cen:center;
+$a_color:#333;
+$a_text_Dec:none;
+$distance_0:0;
+$display_ib:inline-block;
+$font_daxiao:14px;
+$color_black:#000;
+$AD_tonglan_bg:#22d9b6;
+* {
+    margin: $distance_0;
+    padding: $distance_0;
+    border: $distance_0;
+    outline: $distance_0;
+    font-size: $mll-footer_W;
+    vertical-align: baseline;
+}
+
+body {
+    margin: 0 auto;
+    font-family: Microsoft YaHei, Arial;
+    _font-family: 宋体, Arial;
+    font-size: 12px;
+}
+
+.clearfix:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+header {
+    position: relative;
+    width: 1190px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.Left {
+    float: left;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    overflow: hidden;
+    vertical-align: top;
+    background: #eee;
+}
+
+.Right {
+    float: right;
+}
+
+.user_header {
+    .nav {
+        width: 180px;
+        padding-top: 40px;
+        text-align: right;
+    }
+}
+
+
+/* 登录主界面 部分*/
+
+.bg-red {
+    background: #e62318;
+}
+
+.main {
+    .content {
+        aside {
+            .login-form {
+                .input-group {
+                    .refresh-btn {
+                        display: inline-block;
+                        margin-top: 10px;
+                        width: 20px;
+                        height: 20px;
+                        background: url(../img/allPuzzle.png) -73px -152px no-repeat;
+                    }
+                    .captcha-img {
+                        margin: 6px 15px 6px 6px;
+                    }
+                    .right-icon {
+                        display: none;
+                        position: absolute;
+                        right: 120px;
+                        top: 12px;
+                        width: 14px;
+                        height: 14px;
+                        background: url(../img/allPuzzle.png) -101px -125px no-repeat;
+                    }
+                    .i-captcha {
+                        float: left;
+                        width: 19px;
+                        height: 19px;
+                        background: url(../img/allPuzzle.png) -42px -30px no-repeat;
+                        margin: 10px 16px 10px 11px;
+                    }
+                    .i-pwd {
+                        float: left;
+                        width: 19px;
+                        height: 19px;
+                        background: url(../img/allPuzzle.png) -21px -30px no-repeat;
+                        margin: 10px 16px 10px 11px;
+                    }
+                    input {
+                        float: left;
+                        height: 20px;
+                        font-size: 13px;
+                        width: 254px;
+                        font-family: 微软雅黑;
+                        border-width: 0px;
+                        border-style: none;
+                        border-color: initial;
+                        border-image: initial;
+                        padding: 10px 0px;
+                        margin: 0px;
+                    }
+                    .i-user {
+                        float: left;
+                        width: 19px;
+                        height: 19px;
+                        background: url(../img/allPuzzle.png) 0 -30px no-repeat;
+                        margin: 10px 16px 10px 11px;
+                    }
+                    position: relative;
+                    height: 40px;
+                    border: 1px solid #ddd;
+                    overflow: hidden;
+                    line-height: 40px;
+                    margin-bottom: 25px;
+                }
+                .login-pwd {
+                    .submit-btn {
+                        margin: 51px 0 20px 0;
+                    }
+                    .error-date {
+                        i {
+                            background: url(../img/allPuzzle.png) -156px -30px no-repeat;
+                            width: 15px;
+                            height: 15px;
+                            vertical-align: middle;
+                            margin: 5px 5px 6px 0;
+                        }
+                        margin: 5px 0;
+                        color: #e62318;
+                        height: 26px;
+                        line-height: 26px;
+                        font-size: 12px;
+                        padding: 0 8px;
+                        border: 1px solid #fff;
+                    }
+                    width: 306px;
+                }
+                .login-type {
+                    position: relative;
+                    width: 306px;
+                    left: 0;
+                }
+                width: 306px;
+                overflow: hidden;
+                position: relative;
+            }
+            .login-switch {
+                li {
+                    position: relative;
+                    float: left;
+                    width: 154px;
+                    text-align: center;
+                    margin: 0 0 23px 0;
+                    cursor: pointer;
+                    font-size: 16px;
+                }
+                li.on {
+                    color: #e62318;
+                    font-weight: 700;
+                }
+                position: relative;
+                font-size: 16px;
+                color: #888;
+                border-bottom: 1px solid #f4f4f4;
+                width: 925px;
+            }
+        }
+        margin: 0 auto;
+        width: 1070px;
+        position: relative;
+    }
+    padding: 72px 0;
+    min-width: 1190px;
+}
+
+aside {
+    position: relative;
+    width: 306px;
+    min-height: 371px;
+    background: #fff;
+    padding: 22px 27px 20px 27px;
+}
+
+.yahei {
+    font-family: "Microsoft YaHei", SimHei;
+}
+
+.switch-type {
+    position: relative;
+    width: 306px;
+    overflow: hidden;
+}
+
+.select-username {
+    position: relative;
+}
+
+.gray {
+    color: #b2b2b2;
+}
+
+input[type=text] {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+input {
+    outline: none;
+}
+
+button {
+    outline: none;
+}
+
+select {
+    outline: none;
+}
+
+textarea {
+    outline: none;
+}
+
+.black {
+    color: #333!important;
+}
+
+.none {
+    display: none;
+}
+
+// img[Attributes Style] {
+//     width: 60px;
+//     height: 28px;
+// }
+#JS_login_pwd .submit-btn {
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    background-color: #e62318;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff !important;
+    border-radius: 3px;
+    margin: 12px 0 0 0;
+}
+
+
+/* 登陆页面下面的图标QQ,微信等 */
+
+.main {
+    .login-form {
+        .other-login {
+            .i-qq {
+                i {
+                    background-position: -73px -108px;
+                    margin-right: 6px;
+                    vertical-align: middle;
+                    display: inline-block;
+                    width: 28px;
+                    height: 28px;
+                    background: url(../img/allPuzzle.png) no-repeat;
+                }
+                span {
+                    padding-right: 13px;
+                    line-height: 16px;
+                    vertical-align: middle;
+                    display: inline-block;
+                    color: #999;
+                }
+                display: block;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                padding-left: 13px;
+                width: 109px;
+                height: 28px;
+            }
+            .i-app {
+                i {
+                    background-position: -73px -80px;
+                    margin-right: 6px;
+                    vertical-align: middle;
+                    display: inline-block;
+                    width: 28px;
+                    height: 28px;
+                    background: url(../img/allPuzzle.png) no-repeat;
+                }
+                span {
+                    border-right: solid 1px #d5d5d5;
+                    padding-right: 13px;
+                    line-height: 16px;
+                    vertical-align: middle;
+                    display: inline-block;
+                    color: #999;
+                }
+                display: block;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                padding-left: 13px;
+                width: 109px;
+                height: 28px;
+            }
+            .i-weixin {
+                span {
+                    border-right: solid 1px #d5d5d5;
+                    padding-right: 13px;
+                    line-height: 16px;
+                    vertical-align: middle;
+                    display: inline-block;
+                    color: #999;
+                }
+                i {
+                    background-position: -73px -172px;
+                    margin-right: 6px;
+                    vertical-align: middle;
+                    display: inline-block;
+                    width: 28px;
+                    height: 28px;
+                    background: url(../img/allPuzzle.png) no-repeat;
+                }
+                display: block;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                padding-left: 13px;
+                width: 109px;
+                height: 28px;
+            }
+            position: relative;
+            width: 440px;
+            left: -13px;
+            margin: 46px 0 0 0;
+            vertical-align: middle;
+        }
+    }
+}

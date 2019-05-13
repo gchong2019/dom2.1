@@ -1,0 +1,381 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta http-equiv=X-UA-Compatible content="ie=edge"><link rel=stylesheet href=css/details.css><title>详情页</title><style type=text/css>
+        .box_right {
+            width: 300px;
+            float: left;
+            margin-left: 30px;
+        }
+        
+        .box_right span {
+            display: block;
+            color: #e60012;
+            font-size: 26px;
+            font-family: 'Century Gothic';
+            margin-bottom: 15px;
+        }
+        
+        .box_right button {
+            display: block;
+            width: 138px;
+            height: 48px;
+            background: orange;
+            border: 0;
+        }
+        
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .wrap {
+            width: 400px;
+            height: 500px;
+            margin: 0 auto;
+            position: relative;
+            float: left;
+        }
+        
+        #spic {
+            width: 400px;
+            height: 400px;
+            border: 1px solid #000;
+            float: left;
+            position: relative;
+        }
+        
+        #spic img {
+            width: 400px;
+            height: 400px;
+        }
+        
+        #sf {
+            background: orange;
+            opacity: 0.3;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            visibility: hidden;
+            cursor: move;
+        }
+        
+        #bf {
+            width: 400px;
+            height: 500px;
+            border: 1px solid #000;
+            float: left;
+            overflow: hidden;
+            position: absolute;
+            left: 420px;
+            top: 0;
+            visibility: hidden;
+        }
+        
+        #bf img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 800px;
+            height: 800px;
+        }
+        
+        #ulist {
+            position: absolute;
+            left: 0px;
+            bottom: 15px;
+            width: 402px;
+            height: 56px;
+            overflow: hidden;
+        }
+        
+        #ulist a {
+            float: left;
+            width: 10px;
+            height: 54px;
+            border: 1px solid #ccc;
+            text-decoration: none;
+            line-height: 56px;
+            text-align: center;
+            background: #fff;
+        }
+        
+        #list {
+            float: left;
+            margin-left: 18px;
+            width: 372px;
+            position: relative;
+        }
+        
+        #list ul {
+            list-style: none;
+            float: left;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        
+        #list ul li {
+            float: left;
+            width: 56px;
+            height: 56px;
+            padding-right: 6px;
+            cursor: pointer;
+        }
+        
+        ul li img {
+            width: 52px;
+            height: 52px;
+            border: 1px solid #ccc;
+        }
+        
+        #right {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            color: #333;
+        }
+        
+        #left {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 2;
+            color: #fff;
+        }
+    </style></head><body><div class=header></div><div class=login-header></div><div class="w clearfix scale"><div class="goods-display Left wrap"><div id=spic><img id=smallpic><div id=sf></div></div><div id=bf><img id=bpic></div><div id=ulist><a href=javascript:; id=left>&lt;</a><div id=list><ul></ul></div><a href=javascript:; id=right>&gt;</a></div></div><div id=JS_goods_info_panel class=goods-panel><div class=title><h4 class=main-title><a href=javascript:; onclick="window._gaq.push(['_trackEvent','2018新版商品详情页','点击_商品标题','品牌']);window._ana.push(['trackEvent','2018新版商品详情页','点击_商品标题','品牌']);" target=_blank>蒂美悦</a> <a href=javascript:; onclick="window._gaq.push(['_trackEvent','2018新版商品详情页','点击_商品标题','风格']);window._ana.push(['trackEvent','2018新版商品详情页','点击_商品标题','风格']);" target=_blank>现代风格</a></h4><h4 id=JS_goods_sub_title class=sub-title>【赠送靠枕】送坐垫+送手喷漆，金属框架+全手工编织，超高性价比！</h4></div><a class=goods_ad id=JS_goods_ad href=javascript:; target=_blank title=51大促><img src=img/1556578551285344803.jpg width=100%></a><ul class=price><li class=price-att><table style=width:100%><tbody><tr><td class=tit><span id=JS_effect_price_type>本站价</span></td><td><strong class=yen>¥</strong> <strong id=JS_effect_price class=gnum></strong> <a href=javascript:; class="cut-note JS_prict_cut">降价通知</a></td><td class=sale-num><span class=line></span><a href=javascript:void(0); class="mt JS_jump" onclick="window._gaq.push(['_trackEvent','2018新版商品详情页','商品属性','评价']);window._ana.push(['trackEvent','2018新版商品详情页','商品属性','评价']);" data-key=pingjia><span id=JS_goods_comment_number class=num>3470</span><span>评价</span></a></td></tr></tbody></table></li><li class=cart-act-info id=JS_cart_activity_box></li><li class=coupon-pre id=J-coupon-pre style="display: list-item;"><table><tbody><tr><td class=tit><span>领券</span></td><td><div class=goods-coupon><a href=javascript:; class=js-coupon-400b410d45af2c1ed8fe11a63ec058c1 data-secret_key=400b410d45af2c1ed8fe11a63ec058c1 data-status=1 data-id=115,129><span>免配送安装费</span><i class=after></i><span class=static_text>领取</span></a></div><div class=selling-coupons></div><div class="sending-coupons J-bouns-list"></div></td></tr></tbody></table></li><li class=act-block id=JS_goods_activity_box><div class=act-block-in><table id=JS_goods_activity_container></table></div></li></ul><div class=table><dl class="trans-fee clearfix"><dt>配送</dt><dd><div class="peisong clearfix"><div class="address Left"><div class=JS_area_select_show style=cursor:pointer;><span id=JS_peisong_address_nav class=txt>浙江杭州上城区上城区</span><i></i></div><div class="areaPanel JS_area_select_list" style="display: none;"><a href=javascript:void(0); class=close>×</a><div class=header><ul id=JS_area_select_header class=clearfix><li class=province><span class=text>浙江</span><span class=arrow></span></li><li class=city><span class=text>杭州</span><span class=arrow></span></li><li class=district><span class=text>上城区</span><span class=arrow></span></li><li class="customDistrict cur"><span class=text>上城区</span><span class=arrow></span></li></ul></div><div id=JS_area_select_list class=areaList><ul class="province none"><li><a href=javascript:void(0); data-region_id=2 class=prov>北京</a></li><li><a href=javascript:void(0); data-region_id=3 class=prov>天津</a></li><li><a href=javascript:void(0); data-region_id=4 class=prov>河北</a></li></ul><ul class="city none"><li><a data-region_id=124>杭州</a></li><li><a data-region_id=125>宁波</a></li><li><a data-region_id=126>温州</a></li></ul><ul class="district none"><li><a href=javascript:; data-region_id=14021>上城区</a></li><li><a href=javascript:; data-region_id=14022>下城区</a></li><li><a href=javascript:; data-region_id=14023>江干区</a></li></ul><ul class=customDistrict><li><a data-region_id=14021>上城区</a></li></ul></div></div></div><div class=Left style=white-space:nowrap;><span id=JS_goods_no_peisong_text class=red style=display:none;></span> <span id=JS_goods_trans_type style=display:inline-block><span class="tran-label2 J-freight" data-type=trans-fee data-direction=up>查看运费</span></span></div></div><p id=JS_goods_extend_attr_3>该商品由 <b class=orange>美乐乐自营旗舰店</b> 发货，并提供售后服务</p></dd></dl><dl class="spec clearfix"><dt>规格</dt><dd>高190CM</dd></dl><dl class="number clearfix"><dt>数量</dt><dd><div class="row goods-item"><div class="input quantity-form"><div class="click Left"><a href=javascript:; class="JS_minus quantity-down minus-num"></a></div><input type=text value=1 id=JS_goods_number class=goodsNumber><div class="click Left"><a href=javascript:; class="JS_add quantity-add add-num"></a></div></div></div></dd></dl><dl class="btns clearfix"><dt></dt><dd id=JS_panel_text_error class=panel-text-error></dd><dd id=JS_panel_btn_box is-can-buy=true><a id=JS_goods_panel_add href=javascript:; title=加入购物车 data-type=normal class="add normal JS_addToCart shop_normal"><i></i>加入购物车</a></dd></dl><dl class="service clearfix"><dt>服务</dt><dd><div class="list Left"><a href=javascript:void(0) class="a J-service-dialog" data-name=服务><span data-type=tuihuan data-href=/article_cat-26/article-620.html>30天无忧退换货</span> <span data-type=zhibao data-href=/article_cat-26/article-679.html>质保三年</span> <span data-type=mll-guijiupei data-href=/article_cat-26/article-1530.html>贵就赔</span></a></div></dd></dl></div></div></div><div class=footer1></div><div class=footer4></div><script src=script/js/jquery.js></script><script src=script/js/cookie.js type=text/javascript charset=utf-8></script><script>
+        ! function() {
+            var $sid = location.search.substring(1).split('=')[1];
+            console.log($sid);
+            $.ajax({
+                url: 'http://10.31.163.22/projectname/php/details.php',
+                data: {
+                    sid: $sid,
+                },
+                dataType: 'json',
+                success: function(data) {
+
+                    console.log(data)
+                    $('#smallpic').attr('sid', data.picid);
+                    console.log(data.urlist.split(','))
+                    $spic = $('#spic img');
+                    $bpic = $('#bpic')
+                    $ul = $('#list ul')
+                        //小图
+                    var $urlarr = data.newurl.split(',');
+                    var $str = '';
+                    $.each($urlarr, function(index, value) {
+                        $str += `<li><img src="${value}"></li>`
+                    })
+                    $ul.html($str);
+                    //购物车
+                    var $cartitle = $('#JS_goods_info_panel .title .main-title')
+                    var $cartprice = $('#JS_effect_price');
+                    $cartitle.html(data.title)
+                    $cartprice.html('￥' + data.price)
+                        //大图
+                    $spic.attr('src', data.url);
+                    $bpic.attr('src', data.url);
+
+                    //放大镜
+                    class scale {
+                        constructor() {
+                            this.spic = $('#spic');
+                            this.sf = $('#sf');
+                            this.bf = $('#bf');
+                            this.bpic = $('#bpic');
+                            this.wrap = $('.wrap')
+                                //bili
+                            this.bili = this.bpic.width() / this.spic.width();
+                            // console.log(this.bili)
+                            //列表图片
+                            this.li = $('#list ul li');
+                            //ul
+                            this.ul = $('#list ul');
+                            //左右按钮
+                            this.left = $('#left');
+                            this.right = $('#right');
+                        }
+                        init() {
+                            var _this = this;
+                            this.spic.hover(function() {
+                                _this.in();
+                            }, function() {
+                                _this.out();
+                            });
+                            //计算ul宽度
+                            this.liwidth = this.li.outerWidth();
+                            // alert(this.liwidth);
+                            this.ul.width(this.liwidth * this.li.length);
+                            // alert(this.ul.width())
+                            this.li.on('click', function() {
+                                _this.tab(this); //一定要传this当前操作的li
+                            })
+
+
+                            //左右按钮点击
+                            this.visiblelength = 6;
+
+                            if ($urlarr.length < 6) {
+                                this.right.css('color', '#fff')
+
+                            }
+                            this.left.on('click', function() {
+                                _this.leftclick();
+                            });
+                            this.right.on('click', function() {
+                                _this.rightclick();
+                            });
+                        } in () {
+                            var _this = this;
+                            this.sf.css('visibility', 'visible');
+                            this.bpic.css('visibility', 'visible');
+                            //小放的尺寸
+                            this.sf.width(this.bf.width() * this.spic.width() / this.bpic.width());
+                            this.sf.height(this.bf.height() * this.spic.height() / this.bpic.height());
+
+
+                            //跟随鼠标移动
+                            this.spic.on('mousemove', function(e) {
+                                _this.move(e);
+                            });
+
+                        }
+                        out() {
+                            this.sf.css('visibility', 'hidden');
+                            this.bpic.css('visibility', 'hidden');
+                        }
+                        move(e) {
+                            var $left = e.pageX - this.sf.width() / 2 - this.wrap.offset().left;
+                            var $top = e.pageY - this.sf.height() / 2 - this.wrap.offset().top;
+                            if ($left <= 0) {
+                                $left = 0
+                            } else if ($left >= this.spic.width() - this.sf.width()) {
+                                $left = this.spic.width() - this.sf.width()
+                            }
+                            if ($top <= 0) {
+                                $top = 0
+                            } else if ($top >= this.spic.height() - this.sf.height()) {
+                                $top = this.spic.height() - this.sf.height()
+                            }
+                            this.sf.css({
+                                left: $left,
+                                top: $top
+                            })
+                            this.bpic.css({
+                                left: -$left * this.bili,
+                                top: -$top * this.bili
+                            })
+                        }
+                        tab(li) {
+                            var $url = ($(li).find('img').attr('src'));
+                            this.spic.find('img').attr('src', $url);
+                            this.bpic.attr('src', $url);
+                        }
+                        leftclick() {
+                            if (this.visiblelength > 6) {
+                                this.visiblelength--;
+                                this.right.css('color', '#333')
+                                if (this.visiblelength == 6) {
+                                    this.left.css('color', '#fff')
+                                }
+
+                            }
+                            this.ul.css({
+                                left: -this.liwidth * (this.visiblelength - 6)
+                            })
+                        }
+                        rightclick() {
+                            if (this.li.length > this.visiblelength) {
+                                this.visiblelength++;
+                                this.left.css('color', '#333')
+                                if (this.visiblelength == this.li.length) {
+                                    this.right.css('color', '#fff')
+                                }
+
+                            }
+                            this.ul.css({
+                                left: -this.liwidth * (this.visiblelength - 6)
+                            })
+
+                        }
+                    }
+                    new scale().init();
+                }
+            })
+
+        }();
+
+
+        /* 按钮加减操作物品数量 */
+
+        //6.数量的改变
+        //改变商品数量++
+        $('.quantity-add').on('click', function() {
+            var $count = $(this).parents('.goods-item').find('.quantity-form input').val(); //值
+            $count++;
+            if ($count >= 99) {
+                $count = 99;
+            }
+            $(this).parents('.goods-item').find('.quantity-form input').val($count); //赋值回去
+
+        });
+
+        //改变商品数量--
+        $('.quantity-down').on('click', function() {
+            var $count = $(this).parents('.goods-item').find('.quantity-form input').val();
+            $count--;
+            if ($count <= 1) {
+                $count = 1;
+            }
+            $(this).parents('.goods-item').find('.quantity-form input').val($count);
+        });
+
+
+
+        /* 购物车下面的思路和部分代码 */
+        //购物车的思路
+        //存放商品的sid和商品的数量--数组实现。
+        //如果商品第一次存购物车，存放的是商品的sid和商品的数量。
+        //如果是第二次购买商品，从第二次开始改变数量。
+
+        //疑问：判断商品是第一次存还是多次存储。
+
+        //1.解决方式：提前获取cookie里面id和num
+        //点击按钮将商品的数量和id存放cookie中
+        var arrsid = []; //商品的sid
+        var arrnum = []; //商品的数量
+        function cookietoarray() {
+            if (getcookie('cookiesid') && getcookie('cookienum')) { //判断商品是第一次存还是多次存储
+                arrsid = getcookie('cookiesid').split(','); //cookie商品的sid  
+                arrnum = getcookie('cookienum').split(','); //cookie商品的num
+            }
+        }
+
+        //2.有了上面的方法，可以点击加入购物车按钮判断商品是否是第一次还是多次。
+
+        $('#JS_panel_btn_box a').on('click', function() { //点击加入购物车按钮。
+
+            //判断当前的商品sid是否存在购物车(cookie)
+            //判断当前的按钮对应的商品的sid和取出的cookie里面的sid进行比较
+
+            //获取当前的按钮对应的商品的sid
+            var $sid = $(this).parents('.clearfix').find('#smallpic').attr('sid');
+            cookietoarray(); //获取已经存在的cookie值。
+
+            if ($.inArray($sid, arrsid) != -1) { //商品存在，数量叠加 
+                //先取出cookie中的对应的数量值+当前添加的数量值，添加到对应的cookie中。
+                var num = parseInt(arrnum[$.inArray($sid, arrsid)]) + parseInt($('#JS_goods_number').val());
+                arrnum[$.inArray($sid, arrsid)] = num;
+                addcookie('cookienum', arrnum.toString(), 10); //数组存入cookie
+
+            } else { //不存在，第一次添加。将商品的id和数量存入数组，再存入cookie.
+                arrsid.push($sid); //将当前的id存入数组
+                addcookie('cookiesid', arrsid.toString(), 10); //数组存入cookie
+                arrnum.push($('#JS_goods_number').val());
+                addcookie('cookienum', arrnum.toString(), 10); //数组存入cookie
+            }
+        });
+    </script><script>
+        $('.header').load('head.html');
+        $('.login-header').load('nain_head3.html');
+        $('.footer1').load('footer1.html');
+        $('.footer4').load('footer4.html');
+    </script></body></html>

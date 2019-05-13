@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/registor.css">
+    <title>注册页</title>
+</head>
+
+<body>
+    <!-- 头部第一块 -->
+    <div class="header"></div>
+    <!-- logo第二块 -->
+    <header class="login-header">
+        <div id="" class="user_header clearfix" style="padding:11px 0 3px 0;">
+            <div class="logo Left" style="background: url(img/logo2.png) 0 0 no-repeat;width:176px;height:72px;margin-top:-4px;">
+                <a href="/" title="返回美乐乐首页">
+                    <img style="background:none" src="img/blank.gif" width="127" height="52" border="0" alt="美乐乐">
+                </a>
+            </div>
+            <div id="" class="nav Right">
+                <a href="http://10.31.163.22/projectname/src/index1.html">返回首页</a> |
+                <a href="javascript:;" target="_blank">帮助中心</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 注册表格第三块 -->
+    <div id="" class="user_all w" style="position:relative;">
+        <div id="" class="user_content clearfix type_register">
+            <div id="" class="user_login Left">
+                <form action="http://10.31.163.22/projectname/php/reg.php" method="post" id="JS_register_form">
+                    <div id="" class="register_box">
+                        <p>
+                            <label class="tips">
+                                <span class="red">*</span>帐户名：
+                            </label>
+                            <input type="text" name="username" class="register_input  wrong" id="username" autocomplete="off" tabindex="10">
+                            <label id="username-error" class="error" for="username">用户名可使用字母、汉字、数字,4～20个字符</label>
+                        </p>
+                        <p class="p">
+                            <label class="tips">
+                                <span class="red">*</span>设置密码：
+                            </label>
+                            <input type="password" name="password" class="register_input" autocomplete="off" id="password" tabindex="11">
+                            <label id="password-error" class="error" for="password">6-20位，支持字母、数字或符号的组合</label>
+                        </p>
+                        <p class="p">
+                            <label class="tips">
+                                <span class="red">*</span>确认密码：
+                            </label>
+                            <input type="password" name="confirm_password" autocomplete="off" class="register_input" id="confirm_password" tabindex="12">
+                            <label id="confirm_password-error" class="error" for="confirm_password">请确保两次输入的密码一致</label>
+                        </p>
+                        <p class="p">
+                            <label class="tips">
+                                <span class="red">*</span>手机号码：
+                            </label>
+                            <input type="text" name="tel" autocomplete="off" class="register_input" id="tel" tabindex="13">
+                            <label id="tel-error" class="error" for="tel">请输入手机号码</label>
+                        </p>
+                        <!--                        <p id="register_captcha_e">
+                            <label class="tips">
+                                <span class="red">*</span>验证码：
+                            </label>
+                            <input type="text" name="verification_code" class="register_input" id="register_captcha" tabindex="14" maxlength="4">
+                            <img src="img/getCaptcha.jpg" width="61" height="27" border="0" alt="" id="JS_captcha" style="cursor:pointer">
+                            <a class="change-one" href="javascript:void(0);" id="JS_captcha_tip" tabindex="15">换一张</a>
+                            <span id="register_ver_s" class="success to_error" style="display: none;"></span>
+                        </p>
+                        <div id="register_captcha_a" class="error error2"></div> -->
+                        <p class="readed gray">
+                            <input type="checkbox" id="sms_checked_look" checked="">
+                            <label>请阅读《
+                                <a href="javascript:;" target="_blank" class="blue" tabindex="17">美乐乐用户注册协议</a>》
+                            </label>
+                        </p>
+                        <div id="register_submit0" class="operate" style="padding-left:100px;">
+                            <input type="submit" class="regi_btn white f16 yahei clearfix" id="JS_register" tabindex="18" value="注册" name="submit">
+                        </div>
+                        <!-- <div id="register_submit1" class="operate none" style="padding-left:100px;">
+                            <a class="register_submit register_submit2 f16 yahei" style="width:142px;_BACKGROUND-POSITION: -117px -40px;_PADDING-TOP: 6px" id="register_link">
+                                <img src="img/loading2.gif" width="16" height="16">正在注册...
+                            </a>
+                        </div> -->
+                    </div>
+                </form>
+            </div>
+            <div id="" class="user_register Right" style="color:#555;">
+                <div class="user_ok_register">
+                    <span>已注册？</span>
+                    <a href="http://10.31.163.22/projectname/src/login.html" class="logintoreg users_submit users_submit2 white yahei" style="color:#fff!important;font-size: 14px;">登录</a>
+                </div>
+
+                <div class="login_api">
+                    <div class="img_login2" style="position: relative;">
+                        <img src="https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQEs8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAybnJIbUZfWndiM2UxUkVOaWhzMWcAAgRozs9cAwQAowIA" style="width: 120px;height: 120px;" id="JS_img_ewm">
+                        <div id="JS_fixed_login_mc" style="width: 120px;height: 120px;position: absolute;top:89px;left:50px;background-color: rgba(0,0,0,.5);display: none;">
+                            <p style="width: 48px;height: 48px;background: url(img/allPuzzle.png) no-repeat;background-position: -123px -53px;position: absolute;top:36px;left:36px;">
+                            </p>
+                        </div>
+                        <p style="position: relative;top: 20px;font-size: 14px;line-height: 14px;color: #333;">微信扫一扫，快速登录</p>
+                    </div>
+                    <div class="share_login">
+                        <span class="api_tips">使用合作账号登录：</span>
+                        <br>
+                        <span class="api_from">
+                        <a href="javascript:;" onclick="$.setWindowName('QQ',this);" class="qq" tabindex="9"></a>
+                        <a href="javascript:;" onclick="$.setWindowName('新浪微博',this);" class="sina" tabindex="9"></a>
+                        <a href="javascript:;" onclick="$.setWindowName('支付宝',this);" class="alipay" tabindex="9"></a>
+                    </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer1第四块 -->
+    <div class="footer1"></div>
+
+    <!-- footer4第五块 -->
+    <div class="footer4"></div>
+    <script src="script/js/jquery.js"></script>
+    <script>
+        $('.header').load('head.html');
+        $('.footer1').load('footer1.html');
+        $('.footer4').load('footer3.html');
+    </script>
+    <script src="script/thirdplugins/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+    <script src="script/thirdplugins/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+
+    <script>
+        //表单验证-用户名
+        $(function() {
+            $('#JS_register_form').validate({
+                rules: {
+                    username: {
+                        required: true,
+                        minlength: 4,
+                        maxlength: 20,
+                        remote: { //将前端的name给后端
+                            url: "http://10.31.163.22/projectname/php/reg.php", //后台处理程序
+                            type: "post" //数据发送方式
+                        }
+                    },
+                    password: {
+                        required: true,
+                        minlength: 6,
+                        maxlength: 20,
+                    },
+                    confirm_password: {
+                        required: true,
+                        equalTo: '#password'
+                    },
+                    tel: {
+                        required: true,
+                        digits: true,
+                        rangelength: [11, 11]
+                    }
+                },
+                messages: {
+                    username: {
+                        required: '用户名不能为空',
+                        minlength: '用户名不能小于2',
+                        maxlength: '用户名不能大于10',
+                        remote: '用户名已存在'
+                    },
+                    password: {
+                        required: '密码不能为空'
+                    },
+                    confirm_password: {
+                        required: '密码重复不能为空'
+                    },
+                    tel: {
+                        required: "请输入手机号码",
+                        digits: "必须是整数",
+                        rangelength: "号码有误"
+                    }
+                }
+
+            });
+        });
+
+        $.validator.setDefaults({
+            /*添加校验成功后的执行函数--修改提示内容，并为正确提示信息添加新的样式(默认是valid)*/
+            success: function(label) {
+                label.text('√').css('color', 'green').addClass('valid');
+            }
+        });
+    </script>
+</body>
+
+</html>

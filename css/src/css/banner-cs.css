@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* 多行注释：压缩后不显示 */
+/*！ 强制注释：一直显示 */
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.taobao {
+  /* width: 100%; */
+  width: 1200px;
+  height: 460px;
+  /* border: 3px solid black; */
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.taobao ul {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.taobao ul li {
+  /* width: 100%; */
+  width: 1200px;
+  height: 460px;
+  float: left;
+}
+
+.taobao ol {
+  position: absolute;
+  left: 50%;
+  margin-left: -40px;
+  bottom: 10px;
+}
+
+.taobao ol li {
+  float: left;
+  width: 30px;
+  height: 5px;
+  background: #fff;
+  margin-right: 5px;
+  text-indent: -999em;
+  cursor: pointer;
+}
+
+.taobao ol li.active {
+  background: #333;
+}
+
+#left,
+#right {
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -70px;
+  font-size: 100px;
+  display: none;
+}
+
+#left {
+  left: 20px;
+}
+
+#right {
+  right: 20px;
+}
+
+/*# sourceMappingURL=banner-cs.css.map */
